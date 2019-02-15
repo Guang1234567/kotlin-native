@@ -41,7 +41,9 @@ convention.plugins.platformInfo = new PlatformInfo()
 ext {
     distDir = file('dist')
     dependenciesDir = DependencyProcessor.defaultDependenciesRoot
-    platformManager = new PlatformManager(DistributionKt.buildDistribution(projectDir.absolutePath))
+    experimentalEnabled = project.hasProperty("konan.experimentalEnabled")
+    platformManager = new PlatformManager(DistributionKt.buildDistribution(projectDir.absolutePath),
+            ext.experimentalEnabled)
 
     kotlinCommonStdlibModule="org.jetbrains.kotlin:kotlin-stdlib-common:${kotlinVersion}:sources"
     kotlinCompilerModule="org.jetbrains.kotlin:kotlin-compiler:${kotlinVersion}"
@@ -284,6 +286,12 @@ task distCompiler(type: Copy) {
     from(project.file('konan')) {
         into('konan')
     }
+    
+    if (experimentalEnabled) {
+        from(project.file('konan/konan.properties')) {
+            into('konan/experimentalEnabled')
+        }
+    }
 }
 
 task listDist(type: Exec) {
@@ -379,6 +387,12 @@ configurations {
 dependencies {
     ftpAntTask 'org.apache.ant:ant-commons-net:1.9.9'
 }
+
+/*task bundle_experimental(type: (isWindows()) ? Zip : Tar) {
+    ext.experimental = true
+    dependsOn('bundle')
+}*/
+
 
 task bundle(type: (isWindows()) ? Zip : Tar) {
     dependsOn('crossDistPlatformLibs')
