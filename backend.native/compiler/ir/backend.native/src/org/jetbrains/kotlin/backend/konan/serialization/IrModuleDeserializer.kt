@@ -812,7 +812,7 @@ abstract class IrModuleDeserializer(
         origin: IrDeclarationOrigin
     ) {
 
-        function.body = if (base.hasBody()) deserializeStatement(base.body) as IrBody else null
+        function.body = if (base.hasBody()) deserializeStatement(base.body) as IrBody else null.also { println("Nil body: ${base.name}") }
 
         val valueParameters = base.valueParameterList.map { deserializeDeclaration(it, function) as IrValueParameter }
         function.valueParameters.addAll(valueParameters)

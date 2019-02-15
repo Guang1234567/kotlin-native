@@ -308,6 +308,8 @@ internal class Context(config: KonanConfig) : KonanBackendContext(config) {
         }
     }
 
+    lateinit var irModules: Map<String, IrModuleFragment>
+
     // TODO: make lateinit?
     var irModule: IrModuleFragment? = null
         set(module) {

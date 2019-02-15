@@ -29,7 +29,6 @@ internal fun produceCStubs(context: Context) {
 
 internal fun produceOutput(context: Context) {
 
-    val llvmModule = context.llvmModule!!
     val config = context.config.configuration
     val tempFiles = context.config.tempFiles
     val produce = config.get(KonanConfigKeys.PRODUCE)
@@ -42,7 +41,8 @@ internal fun produceOutput(context: Context) {
             val output = tempFiles.nativeBinaryFileName
             context.bitcodeFileName = output
 
-            val generatedBitcodeFiles = 
+            //println("ZZZ1")
+            val generatedBitcodeFiles =
                 if (produce == CompilerOutputKind.DYNAMIC || produce == CompilerOutputKind.STATIC) {
                     produceCAdapterBitcode(
                         context.config.clang, 
@@ -56,17 +56,27 @@ internal fun produceOutput(context: Context) {
                 context.config.defaultNativeLibraries + 
                 generatedBitcodeFiles
 
+            //println("ZZZ2")
             for (library in nativeLibraries) {
-                parseAndLinkBitcodeFile(llvmModule, library)
+                //println(library)
+                parseAndLinkBitcodeFile(context.llvmModule!!, library)
             }
 
-            LLVMWriteBitcodeToFile(llvmModule, output)
+            //println("ZZZ3")
+            LLVMWriteBitcodeToFile(context.llvmModule!!, output)
+            //println("ZZZ4")
         }
         CompilerOutputKind.LIBRARY -> {
             val output = context.config.outputFiles.outputName
             val libraryName = context.config.moduleId
-            val neededLibraries 
-                = context.llvm.librariesForLibraryManifest
+            val neededLibraries = context.librariesWithDependencies
+//                context.config.resolvedLibraries
+//                        .filterRoots { (!it.isDefault && !context.config.purgeUserLibs)/*TODO || imports.isImported(it.library)*/ }
+//                        .getFullList(TopologicalLibraryOrder)
+
+//            val neededLibraries
+//                = context.llvm.librariesForLibraryManifest
+
             val abiVersion = KonanAbiVersion.CURRENT
             val compilerVersion = KonanVersion.CURRENT
             val libraryVersion = config.get(KonanConfigKeys.LIBRARY_VERSION)
@@ -85,7 +95,7 @@ internal fun produceOutput(context: Context) {
                 target,
                 output,
                 libraryName, 
-                llvmModule,
+                /*llvmModule*/null,
                 nopack,
                 manifestProperties,
                 context.dataFlowGraph)
@@ -94,9 +104,10 @@ internal fun produceOutput(context: Context) {
             context.bitcodeFileName = library.mainBitcodeFileName
         }
         CompilerOutputKind.BITCODE -> {
+            //println("QXX")
             val output = context.config.outputFile
             context.bitcodeFileName = output
-            LLVMWriteBitcodeToFile(llvmModule, output)
+            LLVMWriteBitcodeToFile(context.llvmModule!!, output)
         }
     }
 }

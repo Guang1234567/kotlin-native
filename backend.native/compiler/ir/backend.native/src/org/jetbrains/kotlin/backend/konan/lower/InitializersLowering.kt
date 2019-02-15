@@ -157,7 +157,7 @@ internal class InitializersLowering(val context: CommonBackendContext) : ClassLo
 
                 override fun visitConstructor(declaration: IrConstructor): IrStatement {
                     val blockBody = declaration.body as? IrBlockBody
-                            ?: throw AssertionError("Unexpected constructor body: ${declaration.body}")
+                            ?: throw AssertionError("Unexpected constructor body: ${declaration.body} of ${declaration.descriptor} ${declaration.dump()}")
 
                     blockBody.statements.transformFlat {
                         when {

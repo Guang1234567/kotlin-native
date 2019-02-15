@@ -12,6 +12,7 @@ import org.jetbrains.kotlin.backend.konan.serialization.*
 import org.jetbrains.kotlin.cli.common.messages.AnalyzerWithCompilerReport
 import org.jetbrains.kotlin.config.CommonConfigurationKeys
 import org.jetbrains.kotlin.config.languageVersionSettings
+import org.jetbrains.kotlin.ir.declarations.IrFile
 import org.jetbrains.kotlin.ir.declarations.IrModuleFragment
 import org.jetbrains.kotlin.ir.util.patchDeclarationParents
 import org.jetbrains.kotlin.konan.target.CompilerOutputKind
@@ -65,22 +66,48 @@ internal val psiToIrPhase = konanUnitPhase(
                     forwardDeclarationsModuleDescriptor
             )
 
-            val irModules = moduleDescriptor.allDependencyModules.map {
-                val library  = it.konanLibrary
-                if (library == null) {
-                    return@map null
+//            val irModules = moduleDescriptor.allDependencyModules.map {
+//                val library  = it.konanLibrary
+//                if (library == null) {
+//                    return@map null
+//                }
+//                library.irHeader?.let { header -> deserializer.deserializeIrModule(it, header) }
+//            }.filterNotNull()
+
+                    println("psi2ir:")
+
+                    config.librariesWithDependencies(moduleDescriptor).forEach { println("DEPENDENCY: ${it.libraryName}") }
+
+                    val modules = mutableMapOf<String, IrModuleFragment>()
+
+                    var dependenciesCount = 0
+                    while (true) {
+                            // context.config.librariesWithDependencies could change at each iteration.
+                            val dependencies = moduleDescriptor.allDependencyModules.filter {
+                                    config.librariesWithDependencies(moduleDescriptor).contains(it.konanLibrary)
                 }
-                library.irHeader?.let { header -> deserializer.deserializeIrModule(it, header) }
-            }.filterNotNull()
+                        for (dependency in dependencies) {
+                                val konanLibrary = dependency.konanLibrary!!
+                                if (modules.containsKey(konanLibrary.libraryName)) continue
+                                println("Deserializing header of ${konanLibrary.libraryName}")
+                                konanLibrary.irHeader?.let { header ->
+                                        modules[konanLibrary.libraryName] = deserializer.deserializeIrModuleHeader(dependency, header)
+                                    }
+                            }
+                        if (dependencies.size == dependenciesCount) break
+                        dependenciesCount = dependencies.size
+                    }
+
 
             val symbols = KonanSymbols(this, generatorContext.symbolTable, generatorContext.symbolTable.lazyWrapper)
             val module = translator.generateModuleFragment(generatorContext, environment.getSourceFiles(), deserializer)
 
-            irModules.forEach {
+            modules.values.forEach {
                 it.patchDeclarationParents()
             }
 
             irModule = module
+            irModules = modules
             ir.symbols = symbols
 
 //        validateIrModule(this, module)
@@ -100,12 +127,6 @@ internal val irGeneratorPluginsPhase = konanUnitPhase(
         },
         name = "IrGeneratorPlugins",
         description = "Plugged-in ir generators"
-)
-
-internal val genSyntheticFieldsPhase = konanUnitPhase(
-        op = { markBackingFields(this) },
-        name = "GenSyntheticFields",
-        description = "Generate synthetic fields"
 )
 
 // TODO: We copy default value expressions from expects to actuals before IR serialization,
@@ -135,8 +156,7 @@ internal val serializerPhase = konanUnitPhase(
                     serializer.serializeModule(moduleDescriptor, /*if (!config.isInteropStubs) serializedIr else null*/ serializedIr)
         },
         name = "Serializer",
-        description = "Serialize descriptor tree and inline IR bodies",
-        prerequisite = setOf(genSyntheticFieldsPhase)
+        description = "Serialize descriptor tree and inline IR bodies"
 )
 
 internal val setUpLinkStagePhase = konanUnitPhase(
@@ -165,13 +185,54 @@ internal val linkPhase = namedUnitPhase(
                 linkerPhase
 )
 
+internal val allLoweringsPhase = namedIrModulePhase(
+        name = "IrLowering",
+        description = "IR Lowering",
+        lower = removeExpectDeclarationsPhase then
+                lowerBeforeInlinePhase then
+                inlinePhase then
+                lowerAfterInlinePhase then
+                interopPart1Phase then
+                patchDeclarationParents1Phase then
+                performByIrFile(
+                        name = "IrLowerByFile",
+                        description = "IR Lowering by file",
+                        lower = lateinitPhase then
+                                stringConcatenationPhase then
+                                enumConstructorsPhase then
+                                initializersPhase then
+                                sharedVariablesPhase then
+                                localFunctionsPhase then
+                                tailrecPhase then
+                                defaultParameterExtentPhase then
+                                innerClassPhase then
+                                forLoopsPhase then
+                                dataClassesPhase then
+                                builtinOperatorPhase then
+                                finallyBlocksPhase then
+                                testProcessorPhase then
+                                enumClassPhase then
+                                delegationPhase then
+                                callableReferencePhase then
+                                interopPart2Phase then
+                                varargPhase then
+                                compileTimeEvaluatePhase then
+                                coroutinesPhase then
+                                typeOperatorPhase then
+                                bridgesPhase then
+                                autoboxPhase then
+                                returnsInsertionPhase
+                ) then
+                checkDeclarationParentsPhase
+//                                                validateIrModulePhase // Temporarily disabled until moving to new IR finished.
+)
+
 internal val toplevelPhase = namedUnitPhase(
         name = "Compiler",
         description = "The whole compilation process",
         lower = frontendPhase then
                 psiToIrPhase then
                 irGeneratorPluginsPhase then
-                genSyntheticFieldsPhase then
                 copyDefaultValuesToActualPhase then
                 patchDeclarationParents0Phase then
                 serializerPhase then
@@ -179,48 +240,85 @@ internal val toplevelPhase = namedUnitPhase(
                         name = "Backend",
                         description = "All backend",
                         lower = takeFromContext<Context, Unit, IrModuleFragment> { it.irModule!! } then
-                                namedIrModulePhase(
-                                        name = "IrLowering",
-                                        description = "IR Lowering",
-                                        lower = removeExpectDeclarationsPhase then
-                                                lowerBeforeInlinePhase then
-                                                inlinePhase then
-                                                lowerAfterInlinePhase then
-                                                interopPart1Phase then
-                                                patchDeclarationParents1Phase then
-                                                performByIrFile(
-                                                        name = "IrLowerByFile",
-                                                        description = "IR Lowering by file",
-                                                        lower = lateinitPhase then
-                                                                stringConcatenationPhase then
-                                                                enumConstructorsPhase then
-                                                                initializersPhase then
-                                                                sharedVariablesPhase then
-                                                                localFunctionsPhase then
-                                                                tailrecPhase then
-                                                                defaultParameterExtentPhase then
-                                                                innerClassPhase then
-                                                                forLoopsPhase then
-                                                                dataClassesPhase then
-                                                                builtinOperatorPhase then
-                                                                finallyBlocksPhase then
-                                                                testProcessorPhase then
-                                                                enumClassPhase then
-                                                                delegationPhase then
-                                                                callableReferencePhase then
-                                                                interopPart2Phase then
-                                                                varargPhase then
-                                                                compileTimeEvaluatePhase then
-                                                                coroutinesPhase then
-                                                                typeOperatorPhase then
-                                                                bridgesPhase then
-                                                                autoboxPhase then
-                                                                returnsInsertionPhase
-                                                ) then
-                                                checkDeclarationParentsPhase then
-//                                                validateIrModulePhase then // Temporarily disabled until moving to new IR finished.
-                                                moduleIndexForCodegenPhase
-                                ) then
+                                allLoweringsPhase then
+
+                                SameTypeNamedPhaseWrapper(
+                                        name = "Zzz",
+                                        description = "Zzz",
+                                        prerequisite = emptySet(),
+                                        dumperVerifier = EmptyDumperVerifier(),
+                                        lower = object : CompilerPhase<Context, IrModuleFragment, IrModuleFragment> {
+                                            override fun invoke(phaseConfig: PhaseConfig, phaserState: PhaserState, context: Context, input: IrModuleFragment): IrModuleFragment {
+
+                                            val irModule = input
+                                                val files = mutableListOf<IrFile>()
+                                            files += irModule.files
+                                            irModule.files.clear()
+
+                                            context.config.librariesWithDependencies(context.moduleDescriptor)
+                                                    //context.config.resolvedLibraries
+                                                    //.getFullList(TopologicalLibraryOrder)
+                                                    .reversed()
+                                                    .forEach {
+                                                        val libModule = context.irModules[it.libraryName] ?: return@forEach
+
+                                                        println("LOWERING ${libModule.name}")
+
+                                                        irModule.files += libModule.files
+                                                        allLoweringsPhase.invoke(phaseConfig, phaserState, context, irModule)
+
+//                        if (libModule.name.asString().contains("interop") && context.ir.symbols.entryPoint != null)
+//                            println(irModule.dump())
+
+                                                        irModule.files.clear()
+                                                    }
+
+                                                context.config.librariesWithDependencies(context.moduleDescriptor)
+                                                        //context.config.resolvedLibraries
+                                                        //      .getFullList(TopologicalLibraryOrder)
+                                                        .forEach {
+                                                            val libModule = context.irModules[it.libraryName] ?: return@forEach
+                                                            irModule.files += libModule.files
+                                                        }
+
+                                            irModule.files += files
+
+                                                return irModule
+                                            }
+
+                                        }) then
+
+//                                konanUnitPhase(
+//                                        name = "Zzz",
+//                                        description = "Zzz",
+//                                        op = {
+//                                            val files = mutableListOf<IrFile>()
+//                                            files += irModule!!.files
+//                                            irModule!!.files.clear()
+//
+//                                            config.librariesWithDependencies(moduleDescriptor)
+//                                                    //context.config.resolvedLibraries
+//                                                    //.getFullList(TopologicalLibraryOrder)
+//                                                    .reversed()
+//                                                    .forEach {
+//                                                        val libModule = irModules[it.libraryName] ?: return@forEach
+//
+//                                                        println("LOWERING ${libModule.name}")
+//
+//                                                        irModule!!.files += libModule.files
+//                                                        allLoweringsPhase.invoke(phaseConfig, PhaserState(), this, this.irModule!!)
+//
+////                        if (libModule.name.asString().contains("interop") && context.ir.symbols.entryPoint != null)
+////                            println(irModule.dump())
+//
+//                                                        irModule!!.files.clear()
+//                                                    }
+//
+//                                            irModule!!.files += files
+//
+//                                        }
+//                                ) then
+                                moduleIndexForCodegenPhase then
                                 namedIrModulePhase(
                                         name = "Bitcode",
                                         description = "LLVM Bitcode generation",
@@ -256,6 +354,8 @@ internal fun PhaseConfig.konanPhasesConfig(config: KonanConfig) {
 
         // Don't serialize anything to a final executable.
         switch(serializerPhase, config.produce == CompilerOutputKind.LIBRARY)
+        switch(codegenPhase, config.produce != CompilerOutputKind.LIBRARY)
+        switch(cStubsPhase, config.produce != CompilerOutputKind.LIBRARY)
         switch(linkPhase, config.produce.isNativeBinary)
         switch(testProcessorPhase, getNotNull(KonanConfigKeys.GENERATE_TEST_RUNNER) != TestRunnerKind.NONE)
     }
