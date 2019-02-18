@@ -1,0 +1,13 @@
+#Mon Feb 18 18:18:35 CST 2019
+unique_name=CoreServices
+compilerOpts=-framework CoreServices
+depends=stdlib
+modules=CoreServices
+includedHeaders=System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h System/Library/Frameworks/CoreServices.framework/Headers/UTCoreTypes.h System/Library/Frameworks/CoreServices.framework/Headers/UTType.h
+language=Objective-C
+interop=true
+linkerOpts=-framework CoreServices
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.CoreServices

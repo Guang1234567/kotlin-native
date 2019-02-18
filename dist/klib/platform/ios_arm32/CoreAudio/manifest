@@ -1,0 +1,13 @@
+#Mon Feb 18 16:27:36 CST 2019
+unique_name=CoreAudio
+compilerOpts=-framework CoreAudio
+depends=stdlib
+modules=CoreAudio
+includedHeaders=System/Library/Frameworks/CoreAudio.framework/Headers/CoreAudioTypes.h
+language=Objective-C
+interop=true
+linkerOpts=-framework CoreAudio
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.CoreAudio

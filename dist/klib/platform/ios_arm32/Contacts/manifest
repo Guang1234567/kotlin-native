@@ -1,0 +1,13 @@
+#Mon Feb 18 16:46:43 CST 2019
+unique_name=Contacts
+compilerOpts=-framework Contacts
+depends=stdlib posix darwin Foundation
+modules=Contacts
+includedHeaders=System/Library/Frameworks/Contacts.framework/Headers/Contacts.h System/Library/Frameworks/Contacts.framework/Headers/CNContactStore.h System/Library/Frameworks/Contacts.framework/Headers/ContactsDefines.h System/Library/Frameworks/Contacts.framework/Headers/CNContact.h System/Library/Frameworks/Contacts.framework/Headers/CNLabeledValue.h System/Library/Frameworks/Contacts.framework/Headers/CNPhoneNumber.h System/Library/Frameworks/Contacts.framework/Headers/CNPostalAddress.h System/Library/Frameworks/Contacts.framework/Headers/CNContactRelation.h System/Library/Frameworks/Contacts.framework/Headers/CNSocialProfile.h System/Library/Frameworks/Contacts.framework/Headers/CNInstantMessageAddress.h System/Library/Frameworks/Contacts.framework/Headers/CNContactFetchRequest.h System/Library/Frameworks/Contacts.framework/Headers/CNSaveRequest.h System/Library/Frameworks/Contacts.framework/Headers/CNContact+Predicates.h System/Library/Frameworks/Contacts.framework/Headers/CNMutableContact.h System/Library/Frameworks/Contacts.framework/Headers/CNContact+NSItemProvider.h System/Library/Frameworks/Contacts.framework/Headers/CNMutablePostalAddress.h System/Library/Frameworks/Contacts.framework/Headers/CNGroup.h System/Library/Frameworks/Contacts.framework/Headers/CNGroup+Predicates.h System/Library/Frameworks/Contacts.framework/Headers/CNMutableGroup.h System/Library/Frameworks/Contacts.framework/Headers/CNContainer.h System/Library/Frameworks/Contacts.framework/Headers/CNContainer+Predicates.h System/Library/Frameworks/Contacts.framework/Headers/CNContactFormatter.h System/Library/Frameworks/Contacts.framework/Headers/CNPostalAddressFormatter.h System/Library/Frameworks/Contacts.framework/Headers/CNContactVCardSerialization.h System/Library/Frameworks/Contacts.framework/Headers/CNContactsUserDefaults.h System/Library/Frameworks/Contacts.framework/Headers/CNContactProperty.h System/Library/Frameworks/Contacts.framework/Headers/CNError.h
+language=Objective-C
+interop=true
+linkerOpts=-framework Contacts
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.Contacts

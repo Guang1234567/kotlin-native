@@ -1,0 +1,14 @@
+#Mon Feb 18 16:58:10 CST 2019
+unique_name=OpenGLES3
+compilerOpts=-framework OpenGLES
+headers=OpenGLES/ES3/gl.h OpenGLES/ES3/glext.h
+depends=stdlib
+includedHeaders=System/Library/Frameworks/OpenGLES.framework/Headers/ES3/gl.h System/Library/Frameworks/OpenGLES.framework/Headers/ES3/glext.h 7289fdc9ed8aa3e26cf42084f626211a4407213f39d4cb6f89d2dbbee980f209
+language=Objective-C
+interop=true
+linkerOpts=-framework OpenGLES
+compiler_version=1.2-dev
+headerFilter=OpenGLES/ES3/**
+abi_version=7
+exportForwardDeclarations=
+package=platform.gles3

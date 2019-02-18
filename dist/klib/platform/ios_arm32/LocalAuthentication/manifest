@@ -1,0 +1,13 @@
+#Mon Feb 18 16:53:06 CST 2019
+unique_name=LocalAuthentication
+compilerOpts=-framework LocalAuthentication
+depends=stdlib posix darwin
+modules=LocalAuthentication
+includedHeaders=System/Library/Frameworks/LocalAuthentication.framework/Headers/LocalAuthentication.h System/Library/Frameworks/LocalAuthentication.framework/Headers/LABase.h System/Library/Frameworks/LocalAuthentication.framework/Headers/LAContext.h System/Library/Frameworks/LocalAuthentication.framework/Headers/LAPublicDefines.h System/Library/Frameworks/LocalAuthentication.framework/Headers/LAError.h
+language=Objective-C
+interop=true
+linkerOpts=-framework LocalAuthentication
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.LocalAuthentication

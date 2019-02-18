@@ -1,0 +1,12 @@
+#Mon Feb 18 15:08:30 CST 2019
+unique_name=CommonCrypto
+compilerOpts=-D_XOPEN_SOURCE
+depends=stdlib
+modules=CommonCrypto
+includedHeaders=usr/include/CommonCrypto/CommonCrypto.h usr/include/CommonCrypto/CommonCryptor.h usr/include/CommonCrypto/CommonCryptoError.h usr/include/CommonCrypto/CommonDigest.h usr/include/CommonCrypto/CommonHMAC.h usr/include/CommonCrypto/CommonKeyDerivation.h usr/include/CommonCrypto/CommonSymmetricKeywrap.h usr/include/CommonCrypto/CommonRandom.h
+language=Objective-C
+interop=true
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=cnames.structs._CCCryptor
+package=platform.CoreCrypto

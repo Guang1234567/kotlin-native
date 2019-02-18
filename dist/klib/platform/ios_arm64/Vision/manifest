@@ -1,0 +1,13 @@
+#Mon Feb 18 18:17:10 CST 2019
+unique_name=Vision
+compilerOpts=-framework Vision
+depends=stdlib CoreGraphics posix darwin Foundation
+modules=Vision
+includedHeaders=System/Library/Frameworks/Vision.framework/Headers/Vision.h System/Library/Frameworks/Vision.framework/Headers/VNDefines.h System/Library/Frameworks/Vision.framework/Headers/VNTypes.h System/Library/Frameworks/Vision.framework/Headers/VNError.h System/Library/Frameworks/Vision.framework/Headers/VNUtils.h System/Library/Frameworks/Vision.framework/Headers/VNFaceLandmarks.h System/Library/Frameworks/Vision.framework/Headers/VNRequest.h System/Library/Frameworks/Vision.framework/Headers/VNRequestRevisionProviding.h System/Library/Frameworks/Vision.framework/Headers/VNFaceObservationAccepting.h System/Library/Frameworks/Vision.framework/Headers/VNDetectBarcodesRequest.h System/Library/Frameworks/Vision.framework/Headers/VNDetectFaceRectanglesRequest.h System/Library/Frameworks/Vision.framework/Headers/VNDetectFaceLandmarksRequest.h System/Library/Frameworks/Vision.framework/Headers/VNDetectHorizonRequest.h System/Library/Frameworks/Vision.framework/Headers/VNDetectRectanglesRequest.h System/Library/Frameworks/Vision.framework/Headers/VNDetectTextRectanglesRequest.h System/Library/Frameworks/Vision.framework/Headers/VNCoreMLRequest.h System/Library/Frameworks/Vision.framework/Headers/VNTargetedImageRequest.h System/Library/Frameworks/Vision.framework/Headers/VNRequestHandler.h System/Library/Frameworks/Vision.framework/Headers/VNImageRegistrationRequest.h System/Library/Frameworks/Vision.framework/Headers/VNObservation.h System/Library/Frameworks/Vision.framework/Headers/VNTrackingRequest.h System/Library/Frameworks/Vision.framework/Headers/VNTrackObjectRequest.h System/Library/Frameworks/Vision.framework/Headers/VNTrackRectangleRequest.h
+language=Objective-C
+interop=true
+linkerOpts=-framework Vision
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.Vision

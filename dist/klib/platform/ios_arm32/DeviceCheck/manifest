@@ -1,0 +1,13 @@
+#Mon Feb 18 16:50:48 CST 2019
+unique_name=DeviceCheck
+compilerOpts=-framework DeviceCheck
+depends=stdlib posix darwin
+modules=DeviceCheck
+includedHeaders=System/Library/Frameworks/DeviceCheck.framework/Headers/DeviceCheck.h System/Library/Frameworks/DeviceCheck.framework/Headers/DCDevice.h System/Library/Frameworks/DeviceCheck.framework/Headers/DCError.h
+language=Objective-C
+interop=true
+linkerOpts=-framework DeviceCheck
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.DeviceCheck

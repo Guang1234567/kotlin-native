@@ -1,0 +1,14 @@
+#Mon Feb 18 15:09:31 CST 2019
+unique_name=CFNetwork
+compilerOpts=-framework CFNetwork
+depends=stdlib
+modules=CFNetwork
+excludedFunctions=kCFHTTPAuthenticationSchemeKerberos kCFHTTPAuthenticationSchemeOAuth1 kCFNetworkProxiesProxyAutoConfigJavaScript kCFProxyAutoConfigurationHTTPResponseKey
+includedHeaders=System/Library/Frameworks/CFNetwork.framework/Versions/A/Headers/CFNetwork.h System/Library/Frameworks/CFNetwork.framework/Versions/A/Headers/CFNetworkDefs.h System/Library/Frameworks/CFNetwork.framework/Versions/A/Headers/CFNetworkErrors.h System/Library/Frameworks/CFNetwork.framework/Versions/A/Headers/CFSocketStream.h System/Library/Frameworks/CFNetwork.framework/Versions/A/Headers/CFHost.h System/Library/Frameworks/CFNetwork.framework/Versions/A/Headers/CFNetServices.h System/Library/Frameworks/CFNetwork.framework/Versions/A/Headers/CFFTPStream.h System/Library/Frameworks/CFNetwork.framework/Versions/A/Headers/CFHTTPMessage.h System/Library/Frameworks/CFNetwork.framework/Versions/A/Headers/CFHTTPStream.h System/Library/Frameworks/CFNetwork.framework/Versions/A/Headers/CFHTTPAuthentication.h System/Library/Frameworks/CFNetwork.framework/Versions/A/Headers/CFNetDiagnostics.h System/Library/Frameworks/CFNetwork.framework/Versions/A/Headers/CFProxySupport.h
+language=Objective-C
+interop=true
+linkerOpts=-framework CFNetwork
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=cnames.structs.__CFHost cnames.structs.__CFNetService cnames.structs.__CFNetServiceMonitor cnames.structs.__CFNetServiceBrowser cnames.structs.__CFHTTPMessage cnames.structs._CFHTTPAuthentication cnames.structs.__CFNetDiagnostic
+package=platform.CFNetwork

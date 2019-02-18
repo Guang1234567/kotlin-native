@@ -1,0 +1,13 @@
+#Mon Feb 18 18:19:28 CST 2019
+unique_name=Network
+compilerOpts=-framework Network
+depends=stdlib posix darwin
+modules=Network
+includedHeaders=System/Library/Frameworks/Network.framework/Headers/Network.h System/Library/Frameworks/Network.framework/Headers/advertise_descriptor.h System/Library/Frameworks/Network.framework/Headers/nw_object.h System/Library/Frameworks/Network.framework/Headers/connection.h System/Library/Frameworks/Network.framework/Headers/endpoint.h System/Library/Frameworks/Network.framework/Headers/parameters.h System/Library/Frameworks/Network.framework/Headers/protocol_options.h System/Library/Frameworks/Network.framework/Headers/interface.h System/Library/Frameworks/Network.framework/Headers/path.h System/Library/Frameworks/Network.framework/Headers/content_context.h System/Library/Frameworks/Network.framework/Headers/error.h System/Library/Frameworks/Network.framework/Headers/ip_options.h System/Library/Frameworks/Network.framework/Headers/listener.h System/Library/Frameworks/Network.framework/Headers/path_monitor.h System/Library/Frameworks/Network.framework/Headers/tcp_options.h System/Library/Frameworks/Network.framework/Headers/tls_options.h System/Library/Frameworks/Network.framework/Headers/udp_options.h
+language=Objective-C
+interop=true
+linkerOpts=-framework Network
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.Network

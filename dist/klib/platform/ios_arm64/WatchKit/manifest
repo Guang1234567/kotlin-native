@@ -1,0 +1,13 @@
+#Mon Feb 18 18:17:09 CST 2019
+unique_name=WatchKit
+compilerOpts=-framework WatchKit
+depends=stdlib CoreGraphics posix darwin Foundation CoreLocation EAGL Metal QuartzCore UIKit MapKit
+modules=WatchKit
+includedHeaders=System/Library/Frameworks/WatchKit.framework/Headers/WatchKit.h System/Library/Frameworks/WatchKit.framework/Headers/WKDefines.h System/Library/Frameworks/WatchKit.framework/Headers/WKError.h System/Library/Frameworks/WatchKit.framework/Headers/WKInterfaceController.h System/Library/Frameworks/WatchKit.framework/Headers/WKImage.h System/Library/Frameworks/WatchKit.framework/Headers/WKInterfaceObject.h System/Library/Frameworks/WatchKit.framework/Headers/WKInterfaceDevice.h System/Library/Frameworks/WatchKit.framework/Headers/WKInterfaceButton.h System/Library/Frameworks/WatchKit.framework/Headers/WKInterfaceGroup.h System/Library/Frameworks/WatchKit.framework/Headers/WKInterfaceImage.h System/Library/Frameworks/WatchKit.framework/Headers/WKInterfaceLabel.h System/Library/Frameworks/WatchKit.framework/Headers/WKInterfaceDate.h System/Library/Frameworks/WatchKit.framework/Headers/WKInterfaceTimer.h System/Library/Frameworks/WatchKit.framework/Headers/WKInterfaceTable.h System/Library/Frameworks/WatchKit.framework/Headers/WKInterfaceMap.h System/Library/Frameworks/WatchKit.framework/Headers/WKInterfacePaymentButton.h System/Library/Frameworks/WatchKit.framework/Headers/WKInterfaceSeparator.h System/Library/Frameworks/WatchKit.framework/Headers/WKInterfaceSlider.h System/Library/Frameworks/WatchKit.framework/Headers/WKInterfaceSwitch.h
+language=Objective-C
+interop=true
+linkerOpts=-framework WatchKit
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.WatchKit

@@ -1,0 +1,13 @@
+#Mon Feb 18 18:11:06 CST 2019
+unique_name=Photos
+compilerOpts=-framework Photos
+depends=stdlib CoreGraphics CoreMedia posix darwin Foundation EAGL Metal QuartzCore UIKit
+modules=Photos
+includedHeaders=System/Library/Frameworks/Photos.framework/Headers/Photos.h System/Library/Frameworks/Photos.framework/Headers/PHPhotoLibrary.h System/Library/Frameworks/Photos.framework/Headers/PhotosTypes.h System/Library/Frameworks/Photos.framework/Headers/PhotosDefines.h System/Library/Frameworks/Photos.framework/Headers/PHObject.h System/Library/Frameworks/Photos.framework/Headers/PHAsset.h System/Library/Frameworks/Photos.framework/Headers/PHFetchResult.h System/Library/Frameworks/Photos.framework/Headers/PHLivePhoto.h System/Library/Frameworks/Photos.framework/Headers/PHCollection.h System/Library/Frameworks/Photos.framework/Headers/PHFetchOptions.h System/Library/Frameworks/Photos.framework/Headers/PHChange.h System/Library/Frameworks/Photos.framework/Headers/PHAssetChangeRequest.h System/Library/Frameworks/Photos.framework/Headers/PHContentEditingOutput.h System/Library/Frameworks/Photos.framework/Headers/PHAssetCreationRequest.h System/Library/Frameworks/Photos.framework/Headers/PHAssetCollectionChangeRequest.h System/Library/Frameworks/Photos.framework/Headers/PHCollectionListChangeRequest.h System/Library/Frameworks/Photos.framework/Headers/PHLivePhotoEditingContext.h System/Library/Frameworks/Photos.framework/Headers/PHImageManager.h System/Library/Frameworks/Photos.framework/Headers/PHAssetResourceManager.h System/Library/Frameworks/Photos.framework/Headers/PHAssetResource.h System/Library/Frameworks/Photos.framework/Headers/PHAdjustmentData.h System/Library/Frameworks/Photos.framework/Headers/PHContentEditingInput.h
+language=Objective-C
+interop=true
+linkerOpts=-framework Photos
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.Photos

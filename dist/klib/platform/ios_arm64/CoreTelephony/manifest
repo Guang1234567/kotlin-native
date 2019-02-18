@@ -1,0 +1,13 @@
+#Mon Feb 18 17:43:34 CST 2019
+unique_name=CoreTelephony
+compilerOpts=-framework CoreTelephony
+depends=stdlib posix darwin Foundation
+modules=CoreTelephony
+includedHeaders=System/Library/Frameworks/CoreTelephony.framework/Headers/CTCallCenter.h System/Library/Frameworks/CoreTelephony.framework/Headers/CoreTelephonyDefines.h System/Library/Frameworks/CoreTelephony.framework/Headers/CTTelephonyNetworkInfo.h System/Library/Frameworks/CoreTelephony.framework/Headers/CTCellularData.h System/Library/Frameworks/CoreTelephony.framework/Headers/CTCellularPlanProvisioningRequest.h System/Library/Frameworks/CoreTelephony.framework/Headers/CTSubscriberInfo.h System/Library/Frameworks/CoreTelephony.framework/Headers/CTSubscriber.h System/Library/Frameworks/CoreTelephony.framework/Headers/CTCall.h System/Library/Frameworks/CoreTelephony.framework/Headers/CTCarrier.h System/Library/Frameworks/CoreTelephony.framework/Headers/CTCellularPlanProvisioning.h
+language=Objective-C
+interop=true
+linkerOpts=-framework CoreTelephony
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.CoreTelephony

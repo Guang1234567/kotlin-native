@@ -1,0 +1,13 @@
+#Mon Feb 18 18:32:36 CST 2019
+unique_name=CoreMotion
+compilerOpts=-framework CoreMotion
+depends=stdlib posix darwin Foundation
+modules=CoreMotion
+includedHeaders=System/Library/Frameworks/CoreMotion.framework/Headers/CoreMotion.h System/Library/Frameworks/CoreMotion.framework/Headers/CMAccelerometer.h System/Library/Frameworks/CoreMotion.framework/Headers/CMLogItem.h System/Library/Frameworks/CoreMotion.framework/Headers/CMAvailability.h System/Library/Frameworks/CoreMotion.framework/Headers/CMAltimeter.h System/Library/Frameworks/CoreMotion.framework/Headers/CMAltitude.h System/Library/Frameworks/CoreMotion.framework/Headers/CMAuthorization.h System/Library/Frameworks/CoreMotion.framework/Headers/CMAttitude.h System/Library/Frameworks/CoreMotion.framework/Headers/CMDeviceMotion.h System/Library/Frameworks/CoreMotion.framework/Headers/CMGyro.h System/Library/Frameworks/CoreMotion.framework/Headers/CMMagnetometer.h System/Library/Frameworks/CoreMotion.framework/Headers/CMError.h System/Library/Frameworks/CoreMotion.framework/Headers/CMErrorDomain.h System/Library/Frameworks/CoreMotion.framework/Headers/CMMotionActivity.h System/Library/Frameworks/CoreMotion.framework/Headers/CMMotionActivityManager.h System/Library/Frameworks/CoreMotion.framework/Headers/CMMotionManager.h System/Library/Frameworks/CoreMotion.framework/Headers/CMMovementDisorderManager.h System/Library/Frameworks/CoreMotion.framework/Headers/CMPedometer.h System/Library/Frameworks/CoreMotion.framework/Headers/CMStepCounter.h System/Library/Frameworks/CoreMotion.framework/Headers/CMSensorRecorder.h
+language=Objective-C
+interop=true
+linkerOpts=-framework CoreMotion
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.CoreMotion

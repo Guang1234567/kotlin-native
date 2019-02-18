@@ -1,0 +1,13 @@
+#Mon Feb 18 15:10:04 CST 2019
+unique_name=GLUT
+compilerOpts=-framework GLUT
+depends=stdlib
+modules=GLUT
+includedHeaders=System/Library/Frameworks/GLUT.framework/Versions/A/Headers/glut.h System/Library/Frameworks/GLUT.framework/Versions/A/Headers/extrude.h System/Library/Frameworks/GLUT.framework/Versions/A/Headers/port.h System/Library/Frameworks/GLUT.framework/Versions/A/Headers/gutil.h System/Library/Frameworks/GLUT.framework/Versions/A/Headers/glsmap.h System/Library/Frameworks/GLUT.framework/Versions/A/Headers/segment.h System/Library/Frameworks/GLUT.framework/Versions/A/Headers/tube.h System/Library/Frameworks/GLUT.framework/Versions/A/Headers/glsmapint.h System/Library/Frameworks/GLUT.framework/Versions/A/Headers/vvector.h System/Library/Frameworks/GLUT.framework/Versions/A/Headers/glutstroke.h System/Library/Frameworks/GLUT.framework/Versions/A/Headers/rot.h System/Library/Frameworks/GLUT.framework/Versions/A/Headers/tube_gc.h System/Library/Frameworks/GLUT.framework/Versions/A/Headers/glutbitmap.h System/Library/Frameworks/GLUT.framework/Versions/A/Headers/intersect.h System/Library/Frameworks/GLUT.framework/Versions/A/Headers/glutf90.h System/Library/Frameworks/GLUT.framework/Versions/A/Headers/copy.h
+language=Objective-C
+interop=true
+linkerOpts=-framework GLUT
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.GLUT

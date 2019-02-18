@@ -1,0 +1,13 @@
+#Mon Feb 18 18:40:54 CST 2019
+unique_name=AddressBookUI
+compilerOpts=-framework AddressBookUI
+depends=stdlib posix darwin Foundation CoreGraphics EAGL QuartzCore UIKit
+modules=AddressBookUI
+includedHeaders=System/Library/Frameworks/AddressBookUI.framework/Headers/AddressBookUI.h System/Library/Frameworks/AddressBookUI.framework/Headers/ABPeoplePickerNavigationController.h System/Library/Frameworks/AddressBookUI.framework/Headers/ABPersonViewController.h System/Library/Frameworks/AddressBookUI.framework/Headers/ABNewPersonViewController.h System/Library/Frameworks/AddressBookUI.framework/Headers/ABUnknownPersonViewController.h System/Library/Frameworks/AddressBookUI.framework/Headers/ABAddressFormatting.h
+language=Objective-C
+interop=true
+linkerOpts=-framework AddressBookUI
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.AddressBookUI

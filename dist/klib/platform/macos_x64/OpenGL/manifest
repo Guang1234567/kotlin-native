@@ -1,0 +1,14 @@
+#Mon Feb 18 15:09:07 CST 2019
+unique_name=OpenGL
+compilerOpts=-framework OpenGL
+headers=OpenGL/glu.h
+depends=stdlib
+includedHeaders=System/Library/Frameworks/OpenGL.framework/Versions/A/Headers/glu.h System/Library/Frameworks/OpenGL.framework/Versions/A/Headers/gl.h System/Library/Frameworks/OpenGL.framework/Versions/A/Headers/glext.h 44b440da86ac300795d5c1cf43c38a5251bbb4c3ebdd0893b86e2b1f5d828b22
+language=Objective-C
+interop=true
+linkerOpts=-framework OpenGL
+compiler_version=1.2-dev
+headerFilter=OpenGL/gl.h OpenGL/glext.h OpenGL/glu.h
+abi_version=7
+exportForwardDeclarations=cnames.structs.GLUnurbs cnames.structs.GLUquadric cnames.structs.GLUtesselator
+package=platform.OpenGL

@@ -1,0 +1,13 @@
+#Mon Feb 18 18:52:49 CST 2019
+unique_name=ARKit
+compilerOpts=-framework ARKit
+depends=stdlib CoreGraphics posix darwin Foundation EAGL QuartzCore ModelIO UIKit GLKit SceneKit SpriteKit
+modules=ARKit
+includedHeaders=System/Library/Frameworks/ARKit.framework/Headers/ARKit.h System/Library/Frameworks/ARKit.framework/Headers/ARError.h System/Library/Frameworks/ARKit.framework/Headers/ARSession.h System/Library/Frameworks/ARKit.framework/Headers/ARConfiguration.h System/Library/Frameworks/ARKit.framework/Headers/ARFrame.h System/Library/Frameworks/ARKit.framework/Headers/ARHitTestResult.h System/Library/Frameworks/ARKit.framework/Headers/ARCamera.h System/Library/Frameworks/ARKit.framework/Headers/ARLightEstimate.h System/Library/Frameworks/ARKit.framework/Headers/ARPointCloud.h System/Library/Frameworks/ARKit.framework/Headers/ARReferenceImage.h System/Library/Frameworks/ARKit.framework/Headers/ARReferenceObject.h System/Library/Frameworks/ARKit.framework/Headers/ARVideoFormat.h System/Library/Frameworks/ARKit.framework/Headers/ARWorldMap.h System/Library/Frameworks/ARKit.framework/Headers/ARAnchor.h System/Library/Frameworks/ARKit.framework/Headers/AREnvironmentProbeAnchor.h System/Library/Frameworks/ARKit.framework/Headers/ARFaceAnchor.h System/Library/Frameworks/ARKit.framework/Headers/ARFaceGeometry.h System/Library/Frameworks/ARKit.framework/Headers/ARImageAnchor.h System/Library/Frameworks/ARKit.framework/Headers/ARObjectAnchor.h System/Library/Frameworks/ARKit.framework/Headers/ARPlaneAnchor.h System/Library/Frameworks/ARKit.framework/Headers/ARPlaneGeometry.h System/Library/Frameworks/ARKit.framework/Headers/ARSCNView.h System/Library/Frameworks/ARKit.framework/Headers/ARSKView.h
+language=Objective-C
+interop=true
+linkerOpts=-framework ARKit
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.ARKit

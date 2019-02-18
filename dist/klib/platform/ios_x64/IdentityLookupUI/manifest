@@ -1,0 +1,13 @@
+#Mon Feb 18 18:58:23 CST 2019
+unique_name=IdentityLookupUI
+compilerOpts=-framework IdentityLookupUI
+depends=stdlib posix darwin Foundation CoreGraphics EAGL QuartzCore UIKit
+modules=IdentityLookupUI
+includedHeaders=System/Library/Frameworks/IdentityLookupUI.framework/Headers/IdentityLookupUI.h System/Library/Frameworks/IdentityLookupUI.framework/Headers/ILClassificationUIExtensionContext.h System/Library/Frameworks/IdentityLookupUI.framework/Headers/ILClassificationUIExtensionViewController.h
+language=Objective-C
+interop=true
+linkerOpts=-framework IdentityLookupUI
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.IdentityLookupUI

@@ -1,0 +1,13 @@
+#Mon Feb 18 18:40:19 CST 2019
+unique_name=AVKit
+compilerOpts=-framework AVKit
+depends=stdlib CoreGraphics posix darwin Foundation EAGL QuartzCore UIKit
+modules=AVKit
+includedHeaders=System/Library/Frameworks/AVKit.framework/Headers/AVKit.h System/Library/Frameworks/AVKit.framework/Headers/AVKitDefines.h System/Library/Frameworks/AVKit.framework/Headers/AVError.h System/Library/Frameworks/AVKit.framework/Headers/AVPictureInPictureController.h System/Library/Frameworks/AVKit.framework/Headers/AVPlayerViewController.h System/Library/Frameworks/AVKit.framework/Headers/AVRoutePickerView.h
+language=Objective-C
+interop=true
+linkerOpts=-framework AVKit
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.AVKit

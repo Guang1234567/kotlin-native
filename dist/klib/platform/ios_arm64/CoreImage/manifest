@@ -1,0 +1,13 @@
+#Mon Feb 18 17:38:22 CST 2019
+unique_name=CoreImage
+compilerOpts=-framework CoreImage
+depends=stdlib CoreGraphics posix darwin Foundation
+modules=CoreImage
+includedHeaders=System/Library/Frameworks/CoreImage.framework/Headers/CoreImage.h System/Library/Frameworks/CoreImage.framework/Headers/CoreImageDefines.h System/Library/Frameworks/CoreImage.framework/Headers/CIVector.h System/Library/Frameworks/CoreImage.framework/Headers/CIColor.h System/Library/Frameworks/CoreImage.framework/Headers/CIImage.h System/Library/Frameworks/CoreImage.framework/Headers/CIContext.h System/Library/Frameworks/CoreImage.framework/Headers/CIFilter.h System/Library/Frameworks/CoreImage.framework/Headers/CIFilterConstructor.h System/Library/Frameworks/CoreImage.framework/Headers/CIKernel.h System/Library/Frameworks/CoreImage.framework/Headers/CIDetector.h System/Library/Frameworks/CoreImage.framework/Headers/CIFeature.h System/Library/Frameworks/CoreImage.framework/Headers/CIImageProvider.h System/Library/Frameworks/CoreImage.framework/Headers/CIImageProcessor.h System/Library/Frameworks/CoreImage.framework/Headers/CIImageAccumulator.h System/Library/Frameworks/CoreImage.framework/Headers/CIFilterShape.h System/Library/Frameworks/CoreImage.framework/Headers/CISampler.h System/Library/Frameworks/CoreImage.framework/Headers/CIRAWFilter.h System/Library/Frameworks/CoreImage.framework/Headers/CIRenderDestination.h System/Library/Frameworks/CoreImage.framework/Headers/CIBarcodeDescriptor.h System/Library/Frameworks/CoreImage.framework/Headers/CIKernelMetalLib.h
+language=Objective-C
+interop=true
+linkerOpts=-framework CoreImage
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.CoreImage

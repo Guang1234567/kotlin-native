@@ -1,0 +1,13 @@
+#Mon Feb 18 19:05:34 CST 2019
+unique_name=PassKit
+compilerOpts=-framework PassKit
+depends=stdlib CoreGraphics posix darwin Foundation EAGL QuartzCore UIKit
+modules=PassKit
+includedHeaders=System/Library/Frameworks/PassKit.framework/Headers/PassKit.h System/Library/Frameworks/PassKit.framework/Headers/PKConstants.h System/Library/Frameworks/PassKit.framework/Headers/PKObject.h System/Library/Frameworks/PassKit.framework/Headers/PKError.h System/Library/Frameworks/PassKit.framework/Headers/PKPass.h System/Library/Frameworks/PassKit.framework/Headers/PKPaymentPass.h System/Library/Frameworks/PassKit.framework/Headers/PKPassLibrary.h System/Library/Frameworks/PassKit.framework/Headers/PKLabeledValue.h System/Library/Frameworks/PassKit.framework/Headers/PKContact.h System/Library/Frameworks/PassKit.framework/Headers/PKTransitPassProperties.h System/Library/Frameworks/PassKit.framework/Headers/PKSuicaPassProperties.h System/Library/Frameworks/PassKit.framework/Headers/PKPaymentRequest.h System/Library/Frameworks/PassKit.framework/Headers/PKPaymentRequestStatus.h System/Library/Frameworks/PassKit.framework/Headers/PKPayment.h System/Library/Frameworks/PassKit.framework/Headers/PKPaymentToken.h System/Library/Frameworks/PassKit.framework/Headers/PKPaymentMethod.h System/Library/Frameworks/PassKit.framework/Headers/PKPaymentAuthorizationViewController.h System/Library/Frameworks/PassKit.framework/Headers/PKPaymentAuthorizationController.h System/Library/Frameworks/PassKit.framework/Headers/PKAddPassButton.h System/Library/Frameworks/PassKit.framework/Headers/PKPaymentButton.h System/Library/Frameworks/PassKit.framework/Headers/PKAddPassesViewController.h System/Library/Frameworks/PassKit.framework/Headers/PKAddPaymentPassViewController.h
+language=Objective-C
+interop=true
+linkerOpts=-framework PassKit
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.PassKit

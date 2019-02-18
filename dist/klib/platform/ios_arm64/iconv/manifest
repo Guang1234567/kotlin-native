@@ -1,0 +1,12 @@
+#Mon Feb 18 16:24:51 CST 2019
+unique_name=iconv
+depends=stdlib
+headers=iconv.h
+includedHeaders=usr/include/iconv.h 7f9e0d32caf9ed2059eb3ef6a2452e0205d60712aba3d2b956bbf7579f5544d2
+interop=true
+linkerOpts=-liconv
+compiler_version=1.2-dev
+headerFilter=**
+abi_version=7
+exportForwardDeclarations=
+package=platform.iconv

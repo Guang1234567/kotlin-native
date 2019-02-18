@@ -1,0 +1,13 @@
+#Mon Feb 18 17:38:34 CST 2019
+unique_name=CoreLocation
+compilerOpts=-framework CoreLocation
+depends=stdlib posix darwin Foundation
+modules=CoreLocation
+includedHeaders=System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.h System/Library/Frameworks/CoreLocation.framework/Headers/CLAvailability.h System/Library/Frameworks/CoreLocation.framework/Headers/CLErrorDomain.h System/Library/Frameworks/CoreLocation.framework/Headers/CLError.h System/Library/Frameworks/CoreLocation.framework/Headers/CLRegion.h System/Library/Frameworks/CoreLocation.framework/Headers/CLLocation.h System/Library/Frameworks/CoreLocation.framework/Headers/CLCircularRegion.h System/Library/Frameworks/CoreLocation.framework/Headers/CLBeaconRegion.h System/Library/Frameworks/CoreLocation.framework/Headers/CLHeading.h System/Library/Frameworks/CoreLocation.framework/Headers/CLLocationManager.h System/Library/Frameworks/CoreLocation.framework/Headers/CLLocationManagerDelegate.h System/Library/Frameworks/CoreLocation.framework/Headers/CLVisit.h System/Library/Frameworks/CoreLocation.framework/Headers/CLLocationManager+CLVisitExtensions.h System/Library/Frameworks/CoreLocation.framework/Headers/CLPlacemark.h System/Library/Frameworks/CoreLocation.framework/Headers/CLGeocoder.h
+language=Objective-C
+interop=true
+linkerOpts=-framework CoreLocation
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.CoreLocation

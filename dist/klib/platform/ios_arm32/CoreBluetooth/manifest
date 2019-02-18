@@ -1,0 +1,13 @@
+#Mon Feb 18 16:46:55 CST 2019
+unique_name=CoreBluetooth
+compilerOpts=-framework CoreBluetooth
+depends=stdlib posix darwin Foundation
+modules=CoreBluetooth
+includedHeaders=System/Library/Frameworks/CoreBluetooth.framework/Headers/CoreBluetooth.h System/Library/Frameworks/CoreBluetooth.framework/Headers/CBCentralManager.h System/Library/Frameworks/CoreBluetooth.framework/Headers/CBAdvertisementData.h System/Library/Frameworks/CoreBluetooth.framework/Headers/CBDefines.h System/Library/Frameworks/CoreBluetooth.framework/Headers/CBCentralManagerConstants.h System/Library/Frameworks/CoreBluetooth.framework/Headers/CBManager.h System/Library/Frameworks/CoreBluetooth.framework/Headers/CBPeripheralManager.h System/Library/Frameworks/CoreBluetooth.framework/Headers/CBError.h System/Library/Frameworks/CoreBluetooth.framework/Headers/CBL2CAPChannel.h System/Library/Frameworks/CoreBluetooth.framework/Headers/CBPeer.h System/Library/Frameworks/CoreBluetooth.framework/Headers/CBPeripheralManagerConstants.h System/Library/Frameworks/CoreBluetooth.framework/Headers/CBPeripheral.h System/Library/Frameworks/CoreBluetooth.framework/Headers/CBCentral.h System/Library/Frameworks/CoreBluetooth.framework/Headers/CBService.h System/Library/Frameworks/CoreBluetooth.framework/Headers/CBAttribute.h System/Library/Frameworks/CoreBluetooth.framework/Headers/CBCharacteristic.h System/Library/Frameworks/CoreBluetooth.framework/Headers/CBDescriptor.h System/Library/Frameworks/CoreBluetooth.framework/Headers/CBUUID.h System/Library/Frameworks/CoreBluetooth.framework/Headers/CBATTRequest.h
+language=Objective-C
+interop=true
+linkerOpts=-framework CoreBluetooth
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.CoreBluetooth

@@ -1,0 +1,13 @@
+#Mon Feb 18 17:29:16 CST 2019
+unique_name=PushKit
+compilerOpts=-framework PushKit
+depends=stdlib posix darwin
+modules=PushKit
+includedHeaders=System/Library/Frameworks/PushKit.framework/Headers/PushKit.h System/Library/Frameworks/PushKit.framework/Headers/PKDefines.h System/Library/Frameworks/PushKit.framework/Headers/PKPushCredentials.h System/Library/Frameworks/PushKit.framework/Headers/PKPushPayload.h System/Library/Frameworks/PushKit.framework/Headers/PKPushRegistry.h
+language=Objective-C
+interop=true
+linkerOpts=-framework PushKit
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.PushKit

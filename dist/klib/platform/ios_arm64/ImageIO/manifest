@@ -1,0 +1,13 @@
+#Mon Feb 18 16:31:42 CST 2019
+unique_name=ImageIO
+compilerOpts=-framework ImageIO
+depends=stdlib
+modules=ImageIO
+includedHeaders=System/Library/Frameworks/ImageIO.framework/Headers/ImageIO.h System/Library/Frameworks/ImageIO.framework/Headers/ImageIOBase.h System/Library/Frameworks/ImageIO.framework/Headers/CGImageSource.h System/Library/Frameworks/ImageIO.framework/Headers/CGImageMetadata.h System/Library/Frameworks/ImageIO.framework/Headers/CGImageDestination.h System/Library/Frameworks/ImageIO.framework/Headers/CGImageProperties.h
+language=Objective-C
+interop=true
+linkerOpts=-framework ImageIO
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=cnames.structs.CGImageSource cnames.structs.CGImageMetadata cnames.structs.CGImageMetadataTag cnames.structs.CGImageDestination
+package=platform.ImageIO

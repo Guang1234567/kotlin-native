@@ -1,0 +1,13 @@
+#Mon Feb 18 17:33:09 CST 2019
+unique_name=VideoSubscriberAccount
+compilerOpts=-framework VideoSubscriberAccount
+depends=stdlib posix darwin
+modules=VideoSubscriberAccount
+includedHeaders=System/Library/Frameworks/VideoSubscriberAccount.framework/Headers/VideoSubscriberAccount.h System/Library/Frameworks/VideoSubscriberAccount.framework/Headers/VideoSubscriberAccountDefines.h System/Library/Frameworks/VideoSubscriberAccount.framework/Headers/VideoSubscriberAccountErrors.h System/Library/Frameworks/VideoSubscriberAccount.framework/Headers/VSAccountManager.h System/Library/Frameworks/VideoSubscriberAccount.framework/Headers/VSAccountManagerResult.h System/Library/Frameworks/VideoSubscriberAccount.framework/Headers/VSAccountMetadata.h System/Library/Frameworks/VideoSubscriberAccount.framework/Headers/VSAccountMetadataRequest.h System/Library/Frameworks/VideoSubscriberAccount.framework/Headers/VSAccountProviderResponse.h System/Library/Frameworks/VideoSubscriberAccount.framework/Headers/VSSubscription.h System/Library/Frameworks/VideoSubscriberAccount.framework/Headers/VSSubscriptionRegistrationCenter.h
+language=Objective-C
+interop=true
+linkerOpts=-framework VideoSubscriberAccount
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.VideoSubscriberAccount

@@ -1,0 +1,13 @@
+#Mon Feb 18 17:29:36 CST 2019
+unique_name=PDFKit
+compilerOpts=-framework PDFKit
+depends=stdlib CoreGraphics posix darwin Foundation EAGL Metal QuartzCore UIKit
+modules=PDFKit
+includedHeaders=System/Library/Frameworks/PDFKit.framework/Headers/PDFKit.h System/Library/Frameworks/PDFKit.framework/Headers/PDFKitPlatform.h System/Library/Frameworks/PDFKit.framework/Headers/PDFAction.h System/Library/Frameworks/PDFKit.framework/Headers/PDFActionGoTo.h System/Library/Frameworks/PDFKit.framework/Headers/PDFActionNamed.h System/Library/Frameworks/PDFKit.framework/Headers/PDFActionResetForm.h System/Library/Frameworks/PDFKit.framework/Headers/PDFActionRemoteGoTo.h System/Library/Frameworks/PDFKit.framework/Headers/PDFActionURL.h System/Library/Frameworks/PDFKit.framework/Headers/PDFAnnotation.h System/Library/Frameworks/PDFKit.framework/Headers/PDFPage.h System/Library/Frameworks/PDFKit.framework/Headers/PDFAnnotationUtilities.h System/Library/Frameworks/PDFKit.framework/Headers/PDFAppearanceCharacteristics.h System/Library/Frameworks/PDFKit.framework/Headers/PDFBorder.h System/Library/Frameworks/PDFKit.framework/Headers/PDFDestination.h System/Library/Frameworks/PDFKit.framework/Headers/PDFDocument.h System/Library/Frameworks/PDFKit.framework/Headers/PDFOutline.h System/Library/Frameworks/PDFKit.framework/Headers/PDFSelection.h System/Library/Frameworks/PDFKit.framework/Headers/PDFThumbnailView.h System/Library/Frameworks/PDFKit.framework/Headers/PDFView.h
+language=Objective-C
+interop=true
+linkerOpts=-framework PDFKit
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.PDFKit

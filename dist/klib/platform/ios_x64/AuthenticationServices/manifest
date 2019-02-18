@@ -1,0 +1,13 @@
+#Mon Feb 18 18:43:15 CST 2019
+unique_name=AuthenticationServices
+compilerOpts=-framework AuthenticationServices
+depends=stdlib posix darwin Foundation CoreGraphics EAGL QuartzCore UIKit
+modules=AuthenticationServices
+includedHeaders=System/Library/Frameworks/AuthenticationServices.framework/Headers/AuthenticationServices.h System/Library/Frameworks/AuthenticationServices.framework/Headers/ASCredentialIdentityStore.h System/Library/Frameworks/AuthenticationServices.framework/Headers/ASFoundation.h System/Library/Frameworks/AuthenticationServices.framework/Headers/ASCredentialIdentityStoreState.h System/Library/Frameworks/AuthenticationServices.framework/Headers/ASCredentialProviderExtensionContext.h System/Library/Frameworks/AuthenticationServices.framework/Headers/ASCredentialProviderViewController.h System/Library/Frameworks/AuthenticationServices.framework/Headers/ASCredentialServiceIdentifier.h System/Library/Frameworks/AuthenticationServices.framework/Headers/ASPasswordCredentialIdentity.h System/Library/Frameworks/AuthenticationServices.framework/Headers/ASPasswordCredential.h System/Library/Frameworks/AuthenticationServices.framework/Headers/ASWebAuthenticationSession.h
+language=Objective-C
+interop=true
+linkerOpts=-framework AuthenticationServices
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.AuthenticationServices

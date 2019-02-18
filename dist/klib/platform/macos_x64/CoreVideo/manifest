@@ -1,0 +1,13 @@
+#Mon Feb 18 15:18:10 CST 2019
+unique_name=CoreVideo
+compilerOpts=-framework CoreVideo
+depends=stdlib CoreGraphics
+modules=CoreVideo
+includedHeaders=System/Library/Frameworks/CoreVideo.framework/Versions/A/Headers/CoreVideo.h System/Library/Frameworks/CoreVideo.framework/Versions/A/Headers/CVReturn.h System/Library/Frameworks/CoreVideo.framework/Versions/A/Headers/CVBase.h System/Library/Frameworks/CoreVideo.framework/Versions/A/Headers/CVHostTime.h System/Library/Frameworks/CoreVideo.framework/Versions/A/Headers/CVDisplayLink.h System/Library/Frameworks/CoreVideo.framework/Versions/A/Headers/CVBuffer.h System/Library/Frameworks/CoreVideo.framework/Versions/A/Headers/CVPixelBuffer.h System/Library/Frameworks/CoreVideo.framework/Versions/A/Headers/CVImageBuffer.h System/Library/Frameworks/CoreVideo.framework/Versions/A/Headers/CVPixelBufferIOSurface.h System/Library/Frameworks/CoreVideo.framework/Versions/A/Headers/CVPixelBufferPool.h System/Library/Frameworks/CoreVideo.framework/Versions/A/Headers/CVOpenGLBuffer.h System/Library/Frameworks/CoreVideo.framework/Versions/A/Headers/CVOpenGLBufferPool.h System/Library/Frameworks/CoreVideo.framework/Versions/A/Headers/CVOpenGLTexture.h System/Library/Frameworks/CoreVideo.framework/Versions/A/Headers/CVOpenGLTextureCache.h System/Library/Frameworks/CoreVideo.framework/Versions/A/Headers/CVPixelFormatDescription.h System/Library/Frameworks/CoreVideo.framework/Versions/A/Headers/CVMetalTexture.h System/Library/Frameworks/CoreVideo.framework/Versions/A/Headers/CVMetalTextureCache.h
+language=Objective-C
+interop=true
+linkerOpts=-framework CoreVideo
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=cnames.structs.__CVDisplayLink cnames.structs.__CVBuffer cnames.structs.__CVPixelBufferPool cnames.structs.__CVOpenGLBufferPool cnames.structs.__CVOpenGLTextureCache cnames.structs.__CVMetalTextureCache
+package=platform.CoreVideo

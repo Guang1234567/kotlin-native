@@ -1,0 +1,13 @@
+#Mon Feb 18 17:33:25 CST 2019
+unique_name=UserNotificationsUI
+compilerOpts=-framework UserNotificationsUI
+depends=stdlib CoreGraphics posix darwin
+modules=UserNotificationsUI
+includedHeaders=System/Library/Frameworks/UserNotificationsUI.framework/Headers/UserNotificationsUI.h System/Library/Frameworks/UserNotificationsUI.framework/Headers/UNNotificationContentExtension.h
+language=Objective-C
+interop=true
+linkerOpts=-framework UserNotificationsUI
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.UserNotificationsUI

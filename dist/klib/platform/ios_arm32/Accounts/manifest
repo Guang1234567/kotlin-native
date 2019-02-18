@@ -1,0 +1,13 @@
+#Mon Feb 18 16:42:13 CST 2019
+unique_name=Accounts
+compilerOpts=-framework Accounts
+depends=stdlib posix darwin
+modules=Accounts
+includedHeaders=System/Library/Frameworks/Accounts.framework/Headers/Accounts.h System/Library/Frameworks/Accounts.framework/Headers/AccountsDefines.h System/Library/Frameworks/Accounts.framework/Headers/ACAccount.h System/Library/Frameworks/Accounts.framework/Headers/ACAccountType.h System/Library/Frameworks/Accounts.framework/Headers/ACAccountCredential.h System/Library/Frameworks/Accounts.framework/Headers/ACAccountStore.h System/Library/Frameworks/Accounts.framework/Headers/ACError.h
+language=Objective-C
+interop=true
+linkerOpts=-framework Accounts
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.Accounts

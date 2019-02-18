@@ -1,0 +1,13 @@
+#Mon Feb 18 18:34:03 CST 2019
+unique_name=ExternalAccessory
+compilerOpts=-framework ExternalAccessory
+depends=stdlib posix darwin
+modules=ExternalAccessory
+includedHeaders=System/Library/Frameworks/ExternalAccessory.framework/Headers/ExternalAccessory.h System/Library/Frameworks/ExternalAccessory.framework/Headers/ExternalAccessoryDefines.h System/Library/Frameworks/ExternalAccessory.framework/Headers/EAAccessoryManager.h System/Library/Frameworks/ExternalAccessory.framework/Headers/EAAccessory.h System/Library/Frameworks/ExternalAccessory.framework/Headers/EASession.h System/Library/Frameworks/ExternalAccessory.framework/Headers/EAWiFiUnconfiguredAccessoryBrowser.h System/Library/Frameworks/ExternalAccessory.framework/Headers/EAWiFiUnconfiguredAccessory.h
+language=Objective-C
+interop=true
+linkerOpts=-framework ExternalAccessory
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.ExternalAccessory

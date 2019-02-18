@@ -1,0 +1,13 @@
+#Mon Feb 18 17:03:58 CST 2019
+unique_name=BusinessChat
+compilerOpts=-framework BusinessChat
+depends=stdlib CoreGraphics posix darwin Foundation EAGL Metal QuartzCore UIKit
+modules=BusinessChat
+includedHeaders=System/Library/Frameworks/BusinessChat.framework/Headers/BusinessChat.h System/Library/Frameworks/BusinessChat.framework/Headers/BCChatAction.h System/Library/Frameworks/BusinessChat.framework/Headers/BCChatButton.h
+language=Objective-C
+interop=true
+linkerOpts=-framework BusinessChat
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.BusinessChat

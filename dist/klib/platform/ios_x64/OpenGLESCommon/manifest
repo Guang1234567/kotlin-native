@@ -1,0 +1,14 @@
+#Mon Feb 18 16:27:17 CST 2019
+unique_name=OpenGLESCommon
+compilerOpts=-framework OpenGLES
+headers=OpenGLES/gltypes.h
+depends=stdlib
+includedHeaders=System/Library/Frameworks/OpenGLES.framework/Headers/gltypes.h dcb3a8b8452fa32a210b316c90536e1dd742c0e1f0fb6a45aac359b55564c36c
+language=Objective-C
+interop=true
+linkerOpts=-framework OpenGLES
+compiler_version=1.2-dev
+headerFilter=OpenGLES/gltypes.h
+abi_version=7
+exportForwardDeclarations=cnames.structs.__GLsync
+package=platform.glescommon

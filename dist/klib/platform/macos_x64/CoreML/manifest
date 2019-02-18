@@ -1,0 +1,13 @@
+#Mon Feb 18 15:19:48 CST 2019
+unique_name=CoreML
+compilerOpts=-framework CoreML
+depends=stdlib CoreGraphics posix darwin Foundation
+modules=CoreML
+includedHeaders=System/Library/Frameworks/CoreML.framework/Versions/A/Headers/CoreML.h System/Library/Frameworks/CoreML.framework/Versions/A/Headers/MLFeatureType.h System/Library/Frameworks/CoreML.framework/Versions/A/Headers/MLFeatureValue.h System/Library/Frameworks/CoreML.framework/Versions/A/Headers/MLMultiArray.h System/Library/Frameworks/CoreML.framework/Versions/A/Headers/MLExport.h System/Library/Frameworks/CoreML.framework/Versions/A/Headers/MLSequence.h System/Library/Frameworks/CoreML.framework/Versions/A/Headers/MLFeatureDescription.h System/Library/Frameworks/CoreML.framework/Versions/A/Headers/MLDictionaryConstraint.h System/Library/Frameworks/CoreML.framework/Versions/A/Headers/MLMultiArrayConstraint.h System/Library/Frameworks/CoreML.framework/Versions/A/Headers/MLMultiArrayShapeConstraint.h System/Library/Frameworks/CoreML.framework/Versions/A/Headers/MLMultiArrayShapeConstraintType.h System/Library/Frameworks/CoreML.framework/Versions/A/Headers/MLImageConstraint.h System/Library/Frameworks/CoreML.framework/Versions/A/Headers/MLImageSizeConstraint.h System/Library/Frameworks/CoreML.framework/Versions/A/Headers/MLImageSize.h System/Library/Frameworks/CoreML.framework/Versions/A/Headers/MLImageSizeConstraintType.h System/Library/Frameworks/CoreML.framework/Versions/A/Headers/MLSequenceConstraint.h System/Library/Frameworks/CoreML.framework/Versions/A/Headers/MLFeatureProvider.h System/Library/Frameworks/CoreML.framework/Versions/A/Headers/MLDictionaryFeatureProvider.h System/Library/Frameworks/CoreML.framework/Versions/A/Headers/MLBatchProvider.h System/Library/Frameworks/CoreML.framework/Versions/A/Headers/MLArrayBatchProvider.h System/Library/Frameworks/CoreML.framework/Versions/A/Headers/MLModel.h System/Library/Frameworks/CoreML.framework/Versions/A/Headers/MLModelDescription.h System/Library/Frameworks/CoreML.framework/Versions/A/Headers/MLModelMetadataKeys.h System/Library/Frameworks/CoreML.framework/Versions/A/Headers/MLPredictionOptions.h System/Library/Frameworks/CoreML.framework/Versions/A/Headers/MLModelConfiguration.h System/Library/Frameworks/CoreML.framework/Versions/A/Headers/MLModel+MLModelCompilation.h System/Library/Frameworks/CoreML.framework/Versions/A/Headers/MLModelError.h System/Library/Frameworks/CoreML.framework/Versions/A/Headers/MLCustomLayer.h System/Library/Frameworks/CoreML.framework/Versions/A/Headers/MLCustomModel.h
+language=Objective-C
+interop=true
+linkerOpts=-framework CoreML
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.CoreML

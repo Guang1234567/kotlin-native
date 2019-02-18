@@ -1,0 +1,13 @@
+#Mon Feb 18 18:52:38 CST 2019
+unique_name=FileProviderUI
+compilerOpts=-framework FileProviderUI
+depends=stdlib posix darwin Foundation CoreGraphics EAGL QuartzCore UIKit
+modules=FileProviderUI
+includedHeaders=System/Library/Frameworks/FileProviderUI.framework/Headers/FileProviderUI.h System/Library/Frameworks/FileProviderUI.framework/Headers/FPUIBase.h System/Library/Frameworks/FileProviderUI.framework/Headers/FPUIActionExtensionViewController.h System/Library/Frameworks/FileProviderUI.framework/Headers/FPUIActionExtensionContext.h
+language=Objective-C
+interop=true
+linkerOpts=-framework FileProviderUI
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.FileProviderUI

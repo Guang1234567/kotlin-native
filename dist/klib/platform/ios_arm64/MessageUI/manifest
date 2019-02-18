@@ -1,0 +1,13 @@
+#Mon Feb 18 18:06:44 CST 2019
+unique_name=MessageUI
+compilerOpts=-framework MessageUI
+depends=stdlib posix darwin Foundation CoreGraphics EAGL Metal QuartzCore UIKit
+modules=MessageUI
+includedHeaders=System/Library/Frameworks/MessageUI.framework/Headers/MessageUI.h System/Library/Frameworks/MessageUI.framework/Headers/MFMailComposeViewController.h System/Library/Frameworks/MessageUI.framework/Headers/MFMessageComposeViewController.h
+language=Objective-C
+interop=true
+linkerOpts=-framework MessageUI
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.MessageUI

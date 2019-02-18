@@ -1,0 +1,13 @@
+#Mon Feb 18 17:01:42 CST 2019
+unique_name=GLKit
+compilerOpts=-framework GLKit
+depends=stdlib CoreGraphics posix darwin Foundation ModelIO EAGL Metal QuartzCore UIKit
+modules=GLKit
+includedHeaders=System/Library/Frameworks/GLKit.framework/Headers/GLKit.h System/Library/Frameworks/GLKit.framework/Headers/GLKitBase.h System/Library/Frameworks/GLKit.framework/Headers/GLKView.h System/Library/Frameworks/GLKit.framework/Headers/GLKViewController.h System/Library/Frameworks/GLKit.framework/Headers/GLKModel.h System/Library/Frameworks/GLKit.framework/Headers/GLKEffects.h System/Library/Frameworks/GLKit.framework/Headers/GLKNamedEffect.h System/Library/Frameworks/GLKit.framework/Headers/GLKBaseEffect.h System/Library/Frameworks/GLKit.framework/Headers/GLKEffectPropertyTransform.h System/Library/Frameworks/GLKit.framework/Headers/GLKEffectProperty.h System/Library/Frameworks/GLKit.framework/Headers/GLKMath.h System/Library/Frameworks/GLKit.framework/Headers/GLKMathTypes.h System/Library/Frameworks/GLKit.framework/Headers/GLKMatrix3.h System/Library/Frameworks/GLKit.framework/Headers/GLKVector3.h System/Library/Frameworks/GLKit.framework/Headers/GLKQuaternion.h System/Library/Frameworks/GLKit.framework/Headers/GLKVector4.h System/Library/Frameworks/GLKit.framework/Headers/GLKMatrix4.h System/Library/Frameworks/GLKit.framework/Headers/GLKVector2.h System/Library/Frameworks/GLKit.framework/Headers/GLKMatrixStack.h System/Library/Frameworks/GLKit.framework/Headers/GLKMathUtils.h System/Library/Frameworks/GLKit.framework/Headers/GLKEffectPropertyLight.h System/Library/Frameworks/GLKit.framework/Headers/GLKEffectPropertyMaterial.h System/Library/Frameworks/GLKit.framework/Headers/GLKEffectPropertyTexture.h System/Library/Frameworks/GLKit.framework/Headers/GLKEffectPropertyFog.h System/Library/Frameworks/GLKit.framework/Headers/GLKReflectionMapEffect.h System/Library/Frameworks/GLKit.framework/Headers/GLKSkyboxEffect.h System/Library/Frameworks/GLKit.framework/Headers/GLKTextureLoader.h
+language=Objective-C
+interop=true
+linkerOpts=-framework GLKit
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=cnames.structs._GLKMatrixStack cnames.structs.GLKEffectPropertyPrv
+package=platform.GLKit

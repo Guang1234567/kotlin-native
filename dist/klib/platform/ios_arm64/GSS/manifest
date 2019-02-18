@@ -1,0 +1,13 @@
+#Mon Feb 18 16:32:46 CST 2019
+unique_name=GSS
+compilerOpts=-framework GSS
+depends=stdlib
+modules=GSS
+includedHeaders=System/Library/Frameworks/GSS.framework/Headers/gssapi.h System/Library/Frameworks/GSS.framework/Headers/gssapi_oid.h System/Library/Frameworks/GSS.framework/Headers/gssapi_protos.h System/Library/Frameworks/GSS.framework/Headers/gssapi_apple.h System/Library/Frameworks/GSS.framework/Headers/gssapi_krb5.h System/Library/Frameworks/GSS.framework/Headers/gssapi_spnego.h
+language=Objective-C
+interop=true
+linkerOpts=-framework GSS
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=cnames.structs.gss_name_t_desc_struct cnames.structs.gss_ctx_id_t_desc_struct cnames.structs.gss_cred_id_t_desc_struct cnames.structs.gss_auth_identity cnames.structs.krb5_ccache_data
+package=platform.GSS

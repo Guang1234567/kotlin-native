@@ -1,0 +1,13 @@
+#Mon Feb 18 18:15:19 CST 2019
+unique_name=WatchConnectivity
+compilerOpts=-framework WatchConnectivity
+depends=stdlib posix darwin Foundation
+modules=WatchConnectivity
+includedHeaders=System/Library/Frameworks/WatchConnectivity.framework/Headers/WatchConnectivity.h System/Library/Frameworks/WatchConnectivity.framework/Headers/WCDefines.h System/Library/Frameworks/WatchConnectivity.framework/Headers/WCError.h System/Library/Frameworks/WatchConnectivity.framework/Headers/WCSession.h System/Library/Frameworks/WatchConnectivity.framework/Headers/WCSessionFile.h System/Library/Frameworks/WatchConnectivity.framework/Headers/WCSessionUserInfoTransfer.h
+language=Objective-C
+interop=true
+linkerOpts=-framework WatchConnectivity
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.WatchConnectivity

@@ -1,0 +1,14 @@
+#Mon Feb 18 18:25:24 CST 2019
+unique_name=QuartzCore
+compilerOpts=-framework QuartzCore
+headers=QuartzCore/QuartzCore.h
+depends=stdlib CoreGraphics posix darwin EAGL Foundation
+includedHeaders=System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h System/Library/Frameworks/QuartzCore.framework/Headers/CoreAnimation.h System/Library/Frameworks/QuartzCore.framework/Headers/CABase.h System/Library/Frameworks/QuartzCore.framework/Headers/CATransform3D.h System/Library/Frameworks/QuartzCore.framework/Headers/CAAnimation.h System/Library/Frameworks/QuartzCore.framework/Headers/CALayer.h System/Library/Frameworks/QuartzCore.framework/Headers/CAMediaTiming.h System/Library/Frameworks/QuartzCore.framework/Headers/CADisplayLink.h System/Library/Frameworks/QuartzCore.framework/Headers/CAEAGLLayer.h System/Library/Frameworks/QuartzCore.framework/Headers/CAEmitterCell.h System/Library/Frameworks/QuartzCore.framework/Headers/CAEmitterLayer.h System/Library/Frameworks/QuartzCore.framework/Headers/CAGradientLayer.h System/Library/Frameworks/QuartzCore.framework/Headers/CAMediaTimingFunction.h System/Library/Frameworks/QuartzCore.framework/Headers/CAReplicatorLayer.h System/Library/Frameworks/QuartzCore.framework/Headers/CAScrollLayer.h System/Library/Frameworks/QuartzCore.framework/Headers/CAShapeLayer.h System/Library/Frameworks/QuartzCore.framework/Headers/CATextLayer.h System/Library/Frameworks/QuartzCore.framework/Headers/CATiledLayer.h System/Library/Frameworks/QuartzCore.framework/Headers/CATransaction.h System/Library/Frameworks/QuartzCore.framework/Headers/CATransformLayer.h System/Library/Frameworks/QuartzCore.framework/Headers/CAValueFunction.h 4a49f3d0ae85a013eef36c859b38a22c17582d6060112529335b2ad39dd87b0e
+language=Objective-C
+interop=true
+linkerOpts=-framework QuartzCore
+compiler_version=1.2-dev
+headerFilter=QuartzCore/**
+abi_version=7
+exportForwardDeclarations=
+package=platform.QuartzCore

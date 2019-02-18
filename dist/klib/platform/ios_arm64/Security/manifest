@@ -1,0 +1,13 @@
+#Mon Feb 18 16:30:51 CST 2019
+unique_name=Security
+compilerOpts=-framework Security
+depends=stdlib posix darwin
+modules=Security
+includedHeaders=System/Library/Frameworks/Security.framework/Headers/Security.h System/Library/Frameworks/Security.framework/Headers/SecBase.h System/Library/Frameworks/Security.framework/Headers/SecCertificate.h System/Library/Frameworks/Security.framework/Headers/SecIdentity.h System/Library/Frameworks/Security.framework/Headers/SecAccessControl.h System/Library/Frameworks/Security.framework/Headers/SecItem.h System/Library/Frameworks/Security.framework/Headers/SecKey.h System/Library/Frameworks/Security.framework/Headers/SecPolicy.h System/Library/Frameworks/Security.framework/Headers/SecRandom.h System/Library/Frameworks/Security.framework/Headers/SecImportExport.h System/Library/Frameworks/Security.framework/Headers/SecTrust.h System/Library/Frameworks/Security.framework/Headers/SecSharedCredential.h System/Library/Frameworks/Security.framework/Headers/SecProtocolOptions.h System/Library/Frameworks/Security.framework/Headers/SecProtocolObject.h System/Library/Frameworks/Security.framework/Headers/SecureTransport.h System/Library/Frameworks/Security.framework/Headers/CipherSuite.h System/Library/Frameworks/Security.framework/Headers/SecProtocolMetadata.h System/Library/Frameworks/Security.framework/Headers/SecProtocolTypes.h
+language=Objective-C
+interop=true
+linkerOpts=-framework Security
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=cnames.structs.__SecCertificate cnames.structs.__SecIdentity cnames.structs.__SecKey cnames.structs.__SecPolicy cnames.structs.__SecAccessControl cnames.structs.__SecKeychain cnames.structs.__SecKeychainItem cnames.structs.__SecKeychainSearch cnames.structs.__SecTrustedApplication cnames.structs.__SecAccess cnames.structs.__SecTrust cnames.structs.__SecPassword cnames.structs.__SecRandom cnames.structs.SSLContext
+package=platform.Security

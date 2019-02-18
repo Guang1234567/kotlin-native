@@ -1,0 +1,13 @@
+#Mon Feb 18 15:11:24 CST 2019
+unique_name=DiskArbitration
+compilerOpts=-framework DiskArbitration
+depends=stdlib
+modules=DiskArbitration
+includedHeaders=System/Library/Frameworks/DiskArbitration.framework/Versions/A/Headers/DiskArbitration.h System/Library/Frameworks/DiskArbitration.framework/Versions/A/Headers/DADisk.h System/Library/Frameworks/DiskArbitration.framework/Versions/A/Headers/DASession.h System/Library/Frameworks/DiskArbitration.framework/Versions/A/Headers/DADissenter.h
+language=Objective-C
+interop=true
+linkerOpts=-framework DiskArbitration
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=cnames.structs.__DASession cnames.structs.__DADisk cnames.structs.__DADissenter
+package=platform.DiskArbitration

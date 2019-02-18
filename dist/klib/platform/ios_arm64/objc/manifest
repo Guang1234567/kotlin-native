@@ -1,0 +1,14 @@
+#Mon Feb 18 16:33:46 CST 2019
+unique_name=objc
+compilerOpts=-D_XOPEN_SOURCE
+headers=objc/NSObjCRuntime.h objc/NSObject.h objc/message.h objc/objc-api.h objc/objc-exception.h objc/objc-sync.h objc/objc.h objc/runtime.h
+depends=stdlib
+includedHeaders=usr/include/objc/message.h usr/include/objc/runtime.h usr/include/objc/objc-exception.h usr/include/objc/objc-sync.h c201a57276bdebf2b89edd80e575a0ba98ba1f9d2f7d7a281139054805ad4f72
+language=Objective-C
+interop=true
+linkerOpts=-lobjc
+compiler_version=1.2-dev
+headerFilter=objc/**
+abi_version=7
+exportForwardDeclarations=cnames.structs.objc_method cnames.structs.objc_ivar cnames.structs.objc_category cnames.structs.objc_property cnames.structs.objc_method_list
+package=platform.objc

@@ -1,0 +1,13 @@
+#Mon Feb 18 18:32:03 CST 2019
+unique_name=CoreML
+compilerOpts=-framework CoreML
+depends=stdlib posix darwin Foundation
+modules=CoreML
+includedHeaders=System/Library/Frameworks/CoreML.framework/Headers/CoreML.h System/Library/Frameworks/CoreML.framework/Headers/MLFeatureType.h System/Library/Frameworks/CoreML.framework/Headers/MLFeatureValue.h System/Library/Frameworks/CoreML.framework/Headers/MLMultiArray.h System/Library/Frameworks/CoreML.framework/Headers/MLExport.h System/Library/Frameworks/CoreML.framework/Headers/MLSequence.h System/Library/Frameworks/CoreML.framework/Headers/MLFeatureDescription.h System/Library/Frameworks/CoreML.framework/Headers/MLDictionaryConstraint.h System/Library/Frameworks/CoreML.framework/Headers/MLMultiArrayConstraint.h System/Library/Frameworks/CoreML.framework/Headers/MLMultiArrayShapeConstraint.h System/Library/Frameworks/CoreML.framework/Headers/MLMultiArrayShapeConstraintType.h System/Library/Frameworks/CoreML.framework/Headers/MLImageConstraint.h System/Library/Frameworks/CoreML.framework/Headers/MLImageSizeConstraint.h System/Library/Frameworks/CoreML.framework/Headers/MLImageSize.h System/Library/Frameworks/CoreML.framework/Headers/MLImageSizeConstraintType.h System/Library/Frameworks/CoreML.framework/Headers/MLSequenceConstraint.h System/Library/Frameworks/CoreML.framework/Headers/MLFeatureProvider.h System/Library/Frameworks/CoreML.framework/Headers/MLDictionaryFeatureProvider.h System/Library/Frameworks/CoreML.framework/Headers/MLBatchProvider.h System/Library/Frameworks/CoreML.framework/Headers/MLArrayBatchProvider.h System/Library/Frameworks/CoreML.framework/Headers/MLModel.h System/Library/Frameworks/CoreML.framework/Headers/MLModelDescription.h System/Library/Frameworks/CoreML.framework/Headers/MLModelMetadataKeys.h System/Library/Frameworks/CoreML.framework/Headers/MLPredictionOptions.h System/Library/Frameworks/CoreML.framework/Headers/MLModelConfiguration.h System/Library/Frameworks/CoreML.framework/Headers/MLModel+MLModelCompilation.h System/Library/Frameworks/CoreML.framework/Headers/MLModelError.h System/Library/Frameworks/CoreML.framework/Headers/MLCustomLayer.h System/Library/Frameworks/CoreML.framework/Headers/MLCustomModel.h
+language=Objective-C
+interop=true
+linkerOpts=-framework CoreML
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.CoreML

@@ -1,0 +1,14 @@
+#Mon Feb 18 16:34:57 CST 2019
+unique_name=EAGL
+compilerOpts=-framework OpenGLES
+headers=OpenGLES/EAGL.h OpenGLES/EAGLDrawable.h
+depends=stdlib posix darwin
+includedHeaders=System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLESAvailability.h System/Library/Frameworks/OpenGLES.framework/Headers/EAGLDrawable.h ddf7eb935545ae5852ceb2fa706dc2bf34bd59c0f8d735cf3a11c1f68d70068e
+language=Objective-C
+interop=true
+linkerOpts=-framework OpenGLES
+compiler_version=1.2-dev
+headerFilter=OpenGLES/**
+abi_version=7
+exportForwardDeclarations=
+package=platform.EAGL

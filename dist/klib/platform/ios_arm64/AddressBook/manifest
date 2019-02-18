@@ -1,0 +1,13 @@
+#Mon Feb 18 16:31:02 CST 2019
+unique_name=AddressBook
+compilerOpts=-framework AddressBook
+depends=stdlib
+modules=AddressBook
+includedHeaders=System/Library/Frameworks/AddressBook.framework/Headers/AddressBook.h System/Library/Frameworks/AddressBook.framework/Headers/ABAddressBook.h System/Library/Frameworks/AddressBook.framework/Headers/AddressBookDefines.h System/Library/Frameworks/AddressBook.framework/Headers/ABRecord.h System/Library/Frameworks/AddressBook.framework/Headers/ABPerson.h System/Library/Frameworks/AddressBook.framework/Headers/ABSource.h System/Library/Frameworks/AddressBook.framework/Headers/ABGroup.h System/Library/Frameworks/AddressBook.framework/Headers/ABMultiValue.h
+language=Objective-C
+interop=true
+linkerOpts=-framework AddressBook
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.AddressBook

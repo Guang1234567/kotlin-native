@@ -1,0 +1,13 @@
+#Mon Feb 18 18:51:58 CST 2019
+unique_name=EventKitUI
+compilerOpts=-framework EventKitUI
+depends=stdlib posix darwin Foundation EventKit CoreGraphics EAGL QuartzCore UIKit
+modules=EventKitUI
+includedHeaders=System/Library/Frameworks/EventKitUI.framework/Headers/EventKitUI.h System/Library/Frameworks/EventKitUI.framework/Headers/EventKitUIDefines.h System/Library/Frameworks/EventKitUI.framework/Headers/EKEventEditViewController.h System/Library/Frameworks/EventKitUI.framework/Headers/EKEventViewController.h System/Library/Frameworks/EventKitUI.framework/Headers/EventKitUIBundle.h System/Library/Frameworks/EventKitUI.framework/Headers/EKCalendarChooser.h
+language=Objective-C
+interop=true
+linkerOpts=-framework EventKitUI
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.EventKitUI

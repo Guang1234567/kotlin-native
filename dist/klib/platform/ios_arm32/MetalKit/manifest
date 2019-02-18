@@ -1,0 +1,13 @@
+#Mon Feb 18 17:21:42 CST 2019
+unique_name=MetalKit
+compilerOpts=-framework MetalKit
+depends=stdlib CoreGraphics posix darwin Foundation Metal ModelIO EAGL QuartzCore UIKit
+modules=MetalKit
+includedHeaders=System/Library/Frameworks/MetalKit.framework/Headers/MetalKit.h System/Library/Frameworks/MetalKit.framework/Headers/MTKView.h System/Library/Frameworks/MetalKit.framework/Headers/MTKDefines.h System/Library/Frameworks/MetalKit.framework/Headers/MTKTextureLoader.h System/Library/Frameworks/MetalKit.framework/Headers/MTKModel.h
+language=Objective-C
+interop=true
+linkerOpts=-framework MetalKit
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.MetalKit

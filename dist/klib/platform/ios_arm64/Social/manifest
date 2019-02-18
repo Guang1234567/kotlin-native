@@ -1,0 +1,13 @@
+#Mon Feb 18 18:12:01 CST 2019
+unique_name=Social
+compilerOpts=-framework Social
+depends=stdlib posix darwin Foundation CoreGraphics EAGL Metal QuartzCore UIKit
+modules=Social
+includedHeaders=System/Library/Frameworks/Social.framework/Headers/Social.h System/Library/Frameworks/Social.framework/Headers/SLServiceTypes.h System/Library/Frameworks/Social.framework/Headers/SocialDefines.h System/Library/Frameworks/Social.framework/Headers/SLRequest.h System/Library/Frameworks/Social.framework/Headers/SLComposeServiceViewController.h System/Library/Frameworks/Social.framework/Headers/SLComposeViewController.h System/Library/Frameworks/Social.framework/Headers/SLComposeSheetConfigurationItem.h
+language=Objective-C
+interop=true
+linkerOpts=-framework Social
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.Social

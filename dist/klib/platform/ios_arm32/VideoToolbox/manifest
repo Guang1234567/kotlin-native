@@ -1,0 +1,13 @@
+#Mon Feb 18 17:33:24 CST 2019
+unique_name=VideoToolbox
+compilerOpts=-framework VideoToolbox
+depends=stdlib CoreGraphics CoreMedia
+modules=VideoToolbox
+includedHeaders=System/Library/Frameworks/VideoToolbox.framework/Headers/VideoToolbox.h System/Library/Frameworks/VideoToolbox.framework/Headers/VTCompressionProperties.h System/Library/Frameworks/VideoToolbox.framework/Headers/VTBase.h System/Library/Frameworks/VideoToolbox.framework/Headers/VTCompressionSession.h System/Library/Frameworks/VideoToolbox.framework/Headers/VTSession.h System/Library/Frameworks/VideoToolbox.framework/Headers/VTErrors.h System/Library/Frameworks/VideoToolbox.framework/Headers/VTDecompressionProperties.h System/Library/Frameworks/VideoToolbox.framework/Headers/VTDecompressionSession.h System/Library/Frameworks/VideoToolbox.framework/Headers/VTFrameSilo.h System/Library/Frameworks/VideoToolbox.framework/Headers/VTMultiPassStorage.h System/Library/Frameworks/VideoToolbox.framework/Headers/VTVideoEncoderList.h System/Library/Frameworks/VideoToolbox.framework/Headers/VTUtilities.h System/Library/Frameworks/VideoToolbox.framework/Headers/VTPixelTransferProperties.h
+language=Objective-C
+interop=true
+linkerOpts=-framework VideoToolbox
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=cnames.structs.OpaqueVTCompressionSession cnames.structs.OpaqueVTDecompressionSession cnames.structs.OpaqueVTFrameSilo cnames.structs.OpaqueVTMultiPassStorage
+package=platform.VideoToolbox

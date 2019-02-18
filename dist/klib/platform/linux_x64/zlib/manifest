@@ -1,0 +1,13 @@
+#Mon Feb 18 18:21:33 CST 2019
+unique_name=zlib
+compilerOpts=-DByte\=uByte -DBytef\=uBytef -D_ANSI_SOURCE -D_POSIX_C_SOURCE\=199309 -D_BSD_SOURCE -D_XOPEN_SOURCE\=700
+headers=zconf.h zlib.h
+depends=stdlib
+includedHeaders=usr/include/zlib.h b396b6c797ee07ce5bd3ba01920f6f609d7f90fd6681beebb1c8e539b74b4674
+interop=true
+linkerOpts=-lz
+compiler_version=1.2-dev
+headerFilter=zlib.h
+abi_version=7
+exportForwardDeclarations=
+package=platform.zlib

@@ -1,0 +1,13 @@
+#Mon Feb 18 17:18:51 CST 2019
+unique_name=CarPlay
+compilerOpts=-framework CarPlay
+depends=stdlib CoreGraphics posix darwin Foundation EAGL Metal QuartzCore UIKit
+modules=CarPlay
+includedHeaders=System/Library/Frameworks/CarPlay.framework/Headers/CarPlay.h System/Library/Frameworks/CarPlay.framework/Headers/CPActionSheetTemplate.h System/Library/Frameworks/CarPlay.framework/Headers/CPAlertAction.h System/Library/Frameworks/CarPlay.framework/Headers/CPTemplate.h System/Library/Frameworks/CarPlay.framework/Headers/CPAlertTemplate.h System/Library/Frameworks/CarPlay.framework/Headers/CPBarButton.h System/Library/Frameworks/CarPlay.framework/Headers/CPBarButtonProviding.h System/Library/Frameworks/CarPlay.framework/Headers/CPGridButton.h System/Library/Frameworks/CarPlay.framework/Headers/CPGridTemplate.h System/Library/Frameworks/CarPlay.framework/Headers/CPImageSet.h System/Library/Frameworks/CarPlay.framework/Headers/CPInterfaceController.h System/Library/Frameworks/CarPlay.framework/Headers/CPWindow.h System/Library/Frameworks/CarPlay.framework/Headers/CPListItem.h System/Library/Frameworks/CarPlay.framework/Headers/CPListSection.h System/Library/Frameworks/CarPlay.framework/Headers/CPListTemplate.h System/Library/Frameworks/CarPlay.framework/Headers/CPManeuver.h System/Library/Frameworks/CarPlay.framework/Headers/CPTravelEstimates.h System/Library/Frameworks/CarPlay.framework/Headers/CPMapButton.h System/Library/Frameworks/CarPlay.framework/Headers/CPMapTemplate.h System/Library/Frameworks/CarPlay.framework/Headers/CPNavigationAlert.h System/Library/Frameworks/CarPlay.framework/Headers/CPNavigationSession.h System/Library/Frameworks/CarPlay.framework/Headers/CPTrip.h System/Library/Frameworks/CarPlay.framework/Headers/CPTripPreviewTextConfiguration.h System/Library/Frameworks/CarPlay.framework/Headers/CPSearchTemplate.h System/Library/Frameworks/CarPlay.framework/Headers/CPSessionConfiguration.h System/Library/Frameworks/CarPlay.framework/Headers/CPVoiceControlTemplate.h
+language=Objective-C
+interop=true
+linkerOpts=-framework CarPlay
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.CarPlay

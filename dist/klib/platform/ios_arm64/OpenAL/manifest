@@ -1,0 +1,13 @@
+#Mon Feb 18 16:24:40 CST 2019
+unique_name=OpenAL
+compilerOpts=-framework OpenAL
+depends=stdlib
+modules=OpenAL
+includedHeaders=System/Library/Frameworks/OpenAL.framework/Headers/OpenAL.h System/Library/Frameworks/OpenAL.framework/Headers/al.h System/Library/Frameworks/OpenAL.framework/Headers/alc.h System/Library/Frameworks/OpenAL.framework/Headers/oalStaticBufferExtension.h System/Library/Frameworks/OpenAL.framework/Headers/oalMacOSX_OALExtensions.h
+language=Objective-C
+interop=true
+linkerOpts=-framework OpenAL
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=cnames.structs.ALCdevice_struct cnames.structs.ALCcontext_struct
+package=platform.OpenAL

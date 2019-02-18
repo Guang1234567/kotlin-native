@@ -1,0 +1,14 @@
+#Mon Feb 18 15:07:50 CST 2019
+unique_name=OpenGLCommon
+compilerOpts=-framework OpenGL
+headers=OpenGL/OpenGL.h
+depends=stdlib
+includedHeaders=System/Library/Frameworks/OpenGL.framework/Versions/A/Headers/OpenGL.h System/Library/Frameworks/OpenGL.framework/Versions/A/Headers/OpenGLAvailability.h System/Library/Frameworks/OpenGL.framework/Versions/A/Headers/CGLCurrent.h System/Library/Frameworks/OpenGL.framework/Versions/A/Headers/CGLTypes.h System/Library/Frameworks/OpenGL.framework/Versions/A/Headers/CGLDevice.h System/Library/Frameworks/OpenGL.framework/Versions/A/Headers/gltypes.h System/Library/Frameworks/OpenGL.framework/Versions/A/Headers/CGLRenderers.h System/Library/Frameworks/OpenGL.framework/Versions/A/Headers/CGLIOSurface.h 11a2327b688dcb5b395269215688180c3d45660481a5c85217dac00e0280c1bc
+language=Objective-C
+interop=true
+linkerOpts=-framework OpenGL
+compiler_version=1.2-dev
+headerFilter=OpenGL/**
+abi_version=7
+exportForwardDeclarations=cnames.structs._CGLContextObject cnames.structs._CGLPixelFormatObject cnames.structs._CGLRendererInfoObject cnames.structs._CGLPBufferObject cnames.structs.__GLsync cnames.structs.CGLShareGroupRec cnames.structs._cl_device_id cnames.structs.__IOSurface
+package=platform.OpenGLCommon

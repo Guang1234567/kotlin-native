@@ -1,0 +1,13 @@
+#Mon Feb 18 16:49:50 CST 2019
+unique_name=CoreNFC
+compilerOpts=-framework CoreNFC
+depends=stdlib posix darwin Foundation
+modules=CoreNFC
+includedHeaders=System/Library/Frameworks/CoreNFC.framework/Headers/CoreNFC.h System/Library/Frameworks/CoreNFC.framework/Headers/NFCError.h System/Library/Frameworks/CoreNFC.framework/Headers/NFCReaderSession.h System/Library/Frameworks/CoreNFC.framework/Headers/NFCTag.h System/Library/Frameworks/CoreNFC.framework/Headers/NFCNDEFReaderSession.h System/Library/Frameworks/CoreNFC.framework/Headers/NSUserActivity+CoreNFC.h System/Library/Frameworks/CoreNFC.framework/Headers/NFCISO15693Tag.h System/Library/Frameworks/CoreNFC.framework/Headers/NFCISO15693ReaderSession.h
+language=Objective-C
+interop=true
+linkerOpts=-framework CoreNFC
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.CoreNFC

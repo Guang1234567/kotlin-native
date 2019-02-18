@@ -1,0 +1,13 @@
+#Mon Feb 18 17:37:28 CST 2019
+unique_name=CoreVideo
+compilerOpts=-framework CoreVideo
+depends=stdlib CoreGraphics
+modules=CoreVideo
+includedHeaders=System/Library/Frameworks/CoreVideo.framework/Headers/CoreVideo.h System/Library/Frameworks/CoreVideo.framework/Headers/CVReturn.h System/Library/Frameworks/CoreVideo.framework/Headers/CVBase.h System/Library/Frameworks/CoreVideo.framework/Headers/CVBuffer.h System/Library/Frameworks/CoreVideo.framework/Headers/CVPixelBuffer.h System/Library/Frameworks/CoreVideo.framework/Headers/CVImageBuffer.h System/Library/Frameworks/CoreVideo.framework/Headers/CVPixelBufferIOSurface.h System/Library/Frameworks/CoreVideo.framework/Headers/CVPixelBufferPool.h System/Library/Frameworks/CoreVideo.framework/Headers/CVOpenGLESTexture.h System/Library/Frameworks/CoreVideo.framework/Headers/CVOpenGLESTextureCache.h System/Library/Frameworks/CoreVideo.framework/Headers/CVPixelFormatDescription.h System/Library/Frameworks/CoreVideo.framework/Headers/CVMetalTexture.h System/Library/Frameworks/CoreVideo.framework/Headers/CVMetalTextureCache.h System/Library/Frameworks/CoreVideo.framework/Headers/CVHostTime.h
+language=Objective-C
+interop=true
+linkerOpts=-framework CoreVideo
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=cnames.structs.__CVBuffer cnames.structs.__CVPixelBufferPool cnames.structs.__CVOpenGLESTextureCache cnames.structs.__CVMetalTextureCache
+package=platform.CoreVideo

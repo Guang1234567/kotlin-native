@@ -1,0 +1,12 @@
+#Mon Feb 18 16:23:44 CST 2019
+unique_name=sles
+depends=stdlib
+headers=SLES//OpenSLES.h SLES/OpenSLES_Android.h SLES/OpenSLES_AndroidConfiguration.h SLES/OpenSLES_AndroidMetadata.h SLES/OpenSLES_Platform.h
+includedHeaders=usr/include/SLES/OpenSLES.h usr/include/SLES/OpenSLES_Platform.h usr/include/SLES/OpenSLES_Android.h usr/include/SLES/OpenSLES_AndroidConfiguration.h usr/include/SLES/OpenSLES_AndroidMetadata.h c1274f7177658876db8079a9565b5bbecee1c44787c9cf3c305a96849cd8119b
+interop=true
+linkerOpts=-lOpenSLES
+compiler_version=1.2-dev
+headerFilter=SLES/**
+abi_version=7
+exportForwardDeclarations=
+package=platform.sles

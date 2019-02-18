@@ -1,0 +1,13 @@
+#Mon Feb 18 16:43:22 CST 2019
+unique_name=AssetsLibrary
+compilerOpts=-framework AssetsLibrary
+depends=stdlib CoreGraphics posix darwin
+modules=AssetsLibrary
+includedHeaders=System/Library/Frameworks/AssetsLibrary.framework/Headers/AssetsLibrary.h System/Library/Frameworks/AssetsLibrary.framework/Headers/ALAsset.h System/Library/Frameworks/AssetsLibrary.framework/Headers/ALAssetsLibrary.h System/Library/Frameworks/AssetsLibrary.framework/Headers/ALAssetsFilter.h System/Library/Frameworks/AssetsLibrary.framework/Headers/ALAssetsGroup.h System/Library/Frameworks/AssetsLibrary.framework/Headers/ALAssetRepresentation.h
+language=Objective-C
+interop=true
+linkerOpts=-framework AssetsLibrary
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.AssetsLibrary

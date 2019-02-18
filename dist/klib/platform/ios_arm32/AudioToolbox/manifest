@@ -1,0 +1,13 @@
+#Mon Feb 18 16:36:51 CST 2019
+unique_name=AudioToolbox
+compilerOpts=-framework AudioToolbox
+depends=stdlib posix darwin Foundation
+modules=AudioToolbox AudioUnit
+includedHeaders=System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.h System/Library/Frameworks/AudioToolbox.framework/Headers/AUComponent.h System/Library/Frameworks/AudioToolbox.framework/Headers/AudioComponent.h System/Library/Frameworks/AudioToolbox.framework/Headers/AUGraph.h System/Library/Frameworks/AudioToolbox.framework/Headers/AudioUnit.h System/Library/Frameworks/AudioToolbox.framework/Headers/AudioOutputUnit.h System/Library/Frameworks/AudioToolbox.framework/Headers/AudioUnitProperties.h System/Library/Frameworks/AudioToolbox.framework/Headers/AudioUnitParameters.h System/Library/Frameworks/AudioToolbox.framework/Headers/MusicDevice.h System/Library/Frameworks/AudioToolbox.framework/Headers/AUAudioUnit.h System/Library/Frameworks/AudioToolbox.framework/Headers/AUParameters.h System/Library/Frameworks/AudioToolbox.framework/Headers/AUAudioUnitImplementation.h System/Library/Frameworks/AudioToolbox.framework/Headers/AudioConverter.h System/Library/Frameworks/AudioToolbox.framework/Headers/AudioFile.h System/Library/Frameworks/AudioToolbox.framework/Headers/AudioFileStream.h System/Library/Frameworks/AudioToolbox.framework/Headers/AudioFormat.h System/Library/Frameworks/AudioToolbox.framework/Headers/AudioQueue.h System/Library/Frameworks/AudioToolbox.framework/Headers/AudioServices.h System/Library/Frameworks/AudioToolbox.framework/Headers/AudioSession.h System/Library/Frameworks/AudioToolbox.framework/Headers/CAFFile.h System/Library/Frameworks/AudioToolbox.framework/Headers/ExtendedAudioFile.h System/Library/Frameworks/AudioToolbox.framework/Headers/MusicPlayer.h System/Library/Frameworks/AudioUnit.framework/Headers/AudioUnit.h
+language=Objective-C
+interop=true
+linkerOpts=-framework AudioToolbox
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=cnames.structs.OpaqueAudioComponent cnames.structs.OpaqueAudioComponentInstance cnames.structs.OpaqueAudioFileID cnames.structs.OpaqueAUGraph cnames.structs.OpaqueAudioConverter cnames.structs.OpaqueAudioFileStreamID cnames.structs.OpaqueAudioQueue cnames.structs.OpaqueAudioQueueTimeline cnames.structs.OpaqueAudioQueueProcessingTap cnames.structs.OpaqueExtAudioFile cnames.structs.OpaqueMusicPlayer cnames.structs.OpaqueMusicSequence cnames.structs.OpaqueMusicTrack cnames.structs.OpaqueMusicEventIterator
+package=platform.AudioToolbox

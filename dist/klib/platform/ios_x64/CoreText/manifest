@@ -1,0 +1,13 @@
+#Mon Feb 18 18:19:20 CST 2019
+unique_name=CoreText
+compilerOpts=-framework CoreText
+depends=stdlib CoreFoundation CoreGraphics
+modules=CoreText
+includedHeaders=System/Library/Frameworks/CoreText.framework/Headers/CoreText.h System/Library/Frameworks/CoreText.framework/Headers/CTFont.h System/Library/Frameworks/CoreText.framework/Headers/CTFontDescriptor.h System/Library/Frameworks/CoreText.framework/Headers/CTFontTraits.h System/Library/Frameworks/CoreText.framework/Headers/CTDefines.h System/Library/Frameworks/CoreText.framework/Headers/CTFontCollection.h System/Library/Frameworks/CoreText.framework/Headers/CTFontManager.h System/Library/Frameworks/CoreText.framework/Headers/CTFontManagerErrors.h System/Library/Frameworks/CoreText.framework/Headers/CTFrame.h System/Library/Frameworks/CoreText.framework/Headers/CTFramesetter.h System/Library/Frameworks/CoreText.framework/Headers/CTTypesetter.h System/Library/Frameworks/CoreText.framework/Headers/CTLine.h System/Library/Frameworks/CoreText.framework/Headers/CTGlyphInfo.h System/Library/Frameworks/CoreText.framework/Headers/CTParagraphStyle.h System/Library/Frameworks/CoreText.framework/Headers/CTRubyAnnotation.h System/Library/Frameworks/CoreText.framework/Headers/CTRun.h System/Library/Frameworks/CoreText.framework/Headers/CTRunDelegate.h System/Library/Frameworks/CoreText.framework/Headers/CTStringAttributes.h System/Library/Frameworks/CoreText.framework/Headers/CTTextTab.h System/Library/Frameworks/CoreText.framework/Headers/SFNTLayoutTypes.h System/Library/Frameworks/CoreText.framework/Headers/SFNTTypes.h
+language=Objective-C
+interop=true
+linkerOpts=-framework CoreText
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=cnames.structs.__CTFontDescriptor cnames.structs.__CTFont cnames.structs.__CTFontCollection cnames.structs.__CTFrame cnames.structs.__CTLine cnames.structs.__CTTypesetter cnames.structs.__CTFramesetter cnames.structs.__CTGlyphInfo cnames.structs.__CTParagraphStyle cnames.structs.__CTRubyAnnotation cnames.structs.__CTRun cnames.structs.__CTRunDelegate cnames.structs.__CTTextTab
+package=platform.CoreText

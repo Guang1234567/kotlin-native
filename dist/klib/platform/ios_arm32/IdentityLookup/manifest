@@ -1,0 +1,13 @@
+#Mon Feb 18 16:52:28 CST 2019
+unique_name=IdentityLookup
+compilerOpts=-framework IdentityLookup
+depends=stdlib posix darwin Foundation
+modules=IdentityLookup
+includedHeaders=System/Library/Frameworks/IdentityLookup.framework/Headers/IdentityLookup.h System/Library/Frameworks/IdentityLookup.framework/Headers/ILBase.h System/Library/Frameworks/IdentityLookup.framework/Headers/ILMessageFilterAction.h System/Library/Frameworks/IdentityLookup.framework/Headers/ILMessageFilterError.h System/Library/Frameworks/IdentityLookup.framework/Headers/ILNetworkResponse.h System/Library/Frameworks/IdentityLookup.framework/Headers/ILMessageFilterExtension.h System/Library/Frameworks/IdentityLookup.framework/Headers/ILMessageFilterExtensionContext.h System/Library/Frameworks/IdentityLookup.framework/Headers/ILMessageFilterQueryHandling.h System/Library/Frameworks/IdentityLookup.framework/Headers/ILMessageFilterQueryRequest.h System/Library/Frameworks/IdentityLookup.framework/Headers/ILMessageFilterQueryResponse.h System/Library/Frameworks/IdentityLookup.framework/Headers/ILCommunication.h System/Library/Frameworks/IdentityLookup.framework/Headers/ILCallCommunication.h System/Library/Frameworks/IdentityLookup.framework/Headers/ILMessageCommunication.h System/Library/Frameworks/IdentityLookup.framework/Headers/ILClassificationRequest.h System/Library/Frameworks/IdentityLookup.framework/Headers/ILClassificationResponse.h System/Library/Frameworks/IdentityLookup.framework/Headers/ILClassificationActions.h System/Library/Frameworks/IdentityLookup.framework/Headers/ILMessageClassificationRequest.h System/Library/Frameworks/IdentityLookup.framework/Headers/ILCallClassificationRequest.h
+language=Objective-C
+interop=true
+linkerOpts=-framework IdentityLookup
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.IdentityLookup

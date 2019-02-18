@@ -1,0 +1,13 @@
+#Mon Feb 18 16:44:17 CST 2019
+unique_name=CallKit
+compilerOpts=-framework CallKit
+depends=stdlib posix darwin Foundation
+modules=CallKit
+includedHeaders=System/Library/Frameworks/CallKit.framework/Headers/CallKit.h System/Library/Frameworks/CallKit.framework/Headers/CXBase.h System/Library/Frameworks/CallKit.framework/Headers/CXCallUpdate.h System/Library/Frameworks/CallKit.framework/Headers/CXHandle.h System/Library/Frameworks/CallKit.framework/Headers/CXError.h System/Library/Frameworks/CallKit.framework/Headers/CXAction.h System/Library/Frameworks/CallKit.framework/Headers/CXCallAction.h System/Library/Frameworks/CallKit.framework/Headers/CXStartCallAction.h System/Library/Frameworks/CallKit.framework/Headers/CXAnswerCallAction.h System/Library/Frameworks/CallKit.framework/Headers/CXEndCallAction.h System/Library/Frameworks/CallKit.framework/Headers/CXSetHeldCallAction.h System/Library/Frameworks/CallKit.framework/Headers/CXSetMutedCallAction.h System/Library/Frameworks/CallKit.framework/Headers/CXSetGroupCallAction.h System/Library/Frameworks/CallKit.framework/Headers/CXPlayDTMFCallAction.h System/Library/Frameworks/CallKit.framework/Headers/CXTransaction.h System/Library/Frameworks/CallKit.framework/Headers/CXProvider.h System/Library/Frameworks/CallKit.framework/Headers/CXProviderConfiguration.h System/Library/Frameworks/CallKit.framework/Headers/CXCall.h System/Library/Frameworks/CallKit.framework/Headers/CXCallObserver.h System/Library/Frameworks/CallKit.framework/Headers/CXCallController.h System/Library/Frameworks/CallKit.framework/Headers/CXCallDirectory.h System/Library/Frameworks/CallKit.framework/Headers/CXCallDirectoryManager.h System/Library/Frameworks/CallKit.framework/Headers/CXCallDirectoryProvider.h System/Library/Frameworks/CallKit.framework/Headers/CXCallDirectoryExtensionContext.h
+language=Objective-C
+interop=true
+linkerOpts=-framework CallKit
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.CallKit

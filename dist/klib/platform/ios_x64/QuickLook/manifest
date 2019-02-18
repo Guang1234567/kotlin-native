@@ -1,0 +1,13 @@
+#Mon Feb 18 19:06:00 CST 2019
+unique_name=QuickLook
+compilerOpts=-framework QuickLook
+depends=stdlib CoreGraphics posix darwin Foundation EAGL QuartzCore UIKit
+modules=QuickLook
+includedHeaders=System/Library/Frameworks/QuickLook.framework/Headers/QuickLook.h System/Library/Frameworks/QuickLook.framework/Headers/QLBase.h System/Library/Frameworks/QuickLook.framework/Headers/QLPreviewingController.h System/Library/Frameworks/QuickLook.framework/Headers/QLPreviewController.h System/Library/Frameworks/QuickLook.framework/Headers/QLPreviewItem.h System/Library/Frameworks/QuickLook.framework/Headers/QLThumbnailProvider.h System/Library/Frameworks/QuickLook.framework/Headers/QLThumbnailRequest.h System/Library/Frameworks/QuickLook.framework/Headers/QLThumbnailReply.h
+language=Objective-C
+interop=true
+linkerOpts=-framework QuickLook
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.QuickLook

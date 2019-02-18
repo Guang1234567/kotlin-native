@@ -1,0 +1,13 @@
+#Mon Feb 18 16:37:03 CST 2019
+unique_name=Metal
+compilerOpts=-framework Metal
+depends=stdlib posix darwin Foundation
+modules=Metal
+includedHeaders=System/Library/Frameworks/Metal.framework/Headers/Metal.h System/Library/Frameworks/Metal.framework/Headers/MTLDefines.h System/Library/Frameworks/Metal.framework/Headers/MTLTypes.h System/Library/Frameworks/Metal.framework/Headers/MTLBlitCommandEncoder.h System/Library/Frameworks/Metal.framework/Headers/MTLCommandEncoder.h System/Library/Frameworks/Metal.framework/Headers/MTLBuffer.h System/Library/Frameworks/Metal.framework/Headers/MTLPixelFormat.h System/Library/Frameworks/Metal.framework/Headers/MTLResource.h System/Library/Frameworks/Metal.framework/Headers/MTLTexture.h System/Library/Frameworks/Metal.framework/Headers/MTLFence.h System/Library/Frameworks/Metal.framework/Headers/MTLDevice.h System/Library/Frameworks/Metal.framework/Headers/MTLLibrary.h System/Library/Frameworks/Metal.framework/Headers/MTLArgument.h System/Library/Frameworks/Metal.framework/Headers/MTLCommandBuffer.h System/Library/Frameworks/Metal.framework/Headers/MTLComputeCommandEncoder.h System/Library/Frameworks/Metal.framework/Headers/MTLCommandQueue.h System/Library/Frameworks/Metal.framework/Headers/MTLDepthStencil.h System/Library/Frameworks/Metal.framework/Headers/MTLDrawable.h System/Library/Frameworks/Metal.framework/Headers/MTLRenderPass.h System/Library/Frameworks/Metal.framework/Headers/MTLComputePipeline.h System/Library/Frameworks/Metal.framework/Headers/MTLStageInputOutputDescriptor.h System/Library/Frameworks/Metal.framework/Headers/MTLPipeline.h System/Library/Frameworks/Metal.framework/Headers/MTLRenderPipeline.h System/Library/Frameworks/Metal.framework/Headers/MTLRenderCommandEncoder.h System/Library/Frameworks/Metal.framework/Headers/MTLFunctionConstantValues.h System/Library/Frameworks/Metal.framework/Headers/MTLVertexDescriptor.h System/Library/Frameworks/Metal.framework/Headers/MTLParallelRenderCommandEncoder.h System/Library/Frameworks/Metal.framework/Headers/MTLSampler.h System/Library/Frameworks/Metal.framework/Headers/MTLHeap.h System/Library/Frameworks/Metal.framework/Headers/MTLArgumentEncoder.h System/Library/Frameworks/Metal.framework/Headers/MTLCaptureManager.h System/Library/Frameworks/Metal.framework/Headers/MTLCaptureScope.h System/Library/Frameworks/Metal.framework/Headers/MTLIndirectCommandBuffer.h System/Library/Frameworks/Metal.framework/Headers/MTLIndirectCommandEncoder.h System/Library/Frameworks/Metal.framework/Headers/MTLEvent.h
+language=Objective-C
+interop=true
+linkerOpts=-framework Metal
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.Metal

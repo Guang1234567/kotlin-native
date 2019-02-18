@@ -1,0 +1,15 @@
+#Mon Feb 18 15:10:29 CST 2019
+unique_name=objc
+compilerOpts=-D_XOPEN_SOURCE
+headers=objc/List.h objc/NSObjCRuntime.h objc/NSObject.h objc/Object.h objc/Protocol.h objc/hashtable.h objc/hashtable2.h objc/message.h objc/objc-api.h objc/objc-class.h objc/objc-exception.h objc/objc-load.h objc/objc-runtime.h objc/objc-sync.h objc/objc.h objc/runtime.h
+depends=stdlib posix darwin
+excludedFunctions=KERNEL_AUDIT_TOKEN KERNEL_SECURITY_TOKEN
+includedHeaders=usr/include/objc/List.h usr/include/objc/Object.h usr/include/objc/objc-runtime.h usr/include/objc/runtime.h usr/include/objc/message.h usr/include/objc/Protocol.h usr/include/objc/hashtable.h usr/include/objc/hashtable2.h usr/include/objc/objc-class.h usr/include/objc/objc-exception.h usr/include/objc/objc-load.h usr/include/objc/objc-sync.h f97829c016b20d36bccc179e5e9c0b89e8b58e9b908f223102d05c910aae8cef
+language=Objective-C
+interop=true
+linkerOpts=-lobjc
+compiler_version=1.2-dev
+headerFilter=objc/**
+abi_version=7
+exportForwardDeclarations=cnames.structs.objc_method cnames.structs.objc_ivar cnames.structs.objc_category cnames.structs.objc_property cnames.structs.objc_method_list
+package=platform.objc

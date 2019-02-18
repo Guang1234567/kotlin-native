@@ -1,0 +1,13 @@
+#Mon Feb 18 18:59:43 CST 2019
+unique_name=IntentsUI
+compilerOpts=-framework IntentsUI
+depends=stdlib CoreGraphics posix darwin Foundation EAGL QuartzCore UIKit
+modules=IntentsUI
+includedHeaders=System/Library/Frameworks/IntentsUI.framework/Headers/IntentsUI.h System/Library/Frameworks/IntentsUI.framework/Headers/INImage+IntentsUI.h System/Library/Frameworks/IntentsUI.framework/Headers/INUIAddVoiceShortcutButton.h System/Library/Frameworks/IntentsUI.framework/Headers/INUIAddVoiceShortcutViewController.h System/Library/Frameworks/IntentsUI.framework/Headers/INUIEditVoiceShortcutViewController.h System/Library/Frameworks/IntentsUI.framework/Headers/INUIHostedViewControlling.h System/Library/Frameworks/IntentsUI.framework/Headers/INUIHostedViewSiriProviding.h
+language=Objective-C
+interop=true
+linkerOpts=-framework IntentsUI
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.IntentsUI

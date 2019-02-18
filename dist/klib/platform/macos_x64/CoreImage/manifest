@@ -1,0 +1,13 @@
+#Mon Feb 18 15:20:02 CST 2019
+unique_name=CoreImage
+compilerOpts=-framework CoreImage
+depends=stdlib CoreGraphics posix darwin Foundation
+modules=CoreImage
+includedHeaders=System/Library/Frameworks/CoreImage.framework/Versions/A/Headers/CoreImage.h System/Library/Frameworks/CoreImage.framework/Versions/A/Headers/CoreImageDefines.h System/Library/Frameworks/CoreImage.framework/Versions/A/Headers/CIVector.h System/Library/Frameworks/CoreImage.framework/Versions/A/Headers/CIColor.h System/Library/Frameworks/CoreImage.framework/Versions/A/Headers/CIImage.h System/Library/Frameworks/CoreImage.framework/Versions/A/Headers/CIContext.h System/Library/Frameworks/CoreImage.framework/Versions/A/Headers/CIFilter.h System/Library/Frameworks/CoreImage.framework/Versions/A/Headers/CIFilterConstructor.h System/Library/Frameworks/CoreImage.framework/Versions/A/Headers/CIKernel.h System/Library/Frameworks/CoreImage.framework/Versions/A/Headers/CIDetector.h System/Library/Frameworks/CoreImage.framework/Versions/A/Headers/CIFeature.h System/Library/Frameworks/CoreImage.framework/Versions/A/Headers/CIImageProvider.h System/Library/Frameworks/CoreImage.framework/Versions/A/Headers/CIImageProcessor.h System/Library/Frameworks/CoreImage.framework/Versions/A/Headers/CIImageAccumulator.h System/Library/Frameworks/CoreImage.framework/Versions/A/Headers/CIFilterShape.h System/Library/Frameworks/CoreImage.framework/Versions/A/Headers/CISampler.h System/Library/Frameworks/CoreImage.framework/Versions/A/Headers/CIRAWFilter.h System/Library/Frameworks/CoreImage.framework/Versions/A/Headers/CIRenderDestination.h System/Library/Frameworks/CoreImage.framework/Versions/A/Headers/CIBarcodeDescriptor.h System/Library/Frameworks/CoreImage.framework/Versions/A/Headers/CIFilterGenerator.h System/Library/Frameworks/CoreImage.framework/Versions/A/Headers/CIPlugIn.h System/Library/Frameworks/CoreImage.framework/Versions/A/Headers/CIPlugInInterface.h System/Library/Frameworks/CoreImage.framework/Versions/A/Headers/CIKernelMetalLib.h
+language=Objective-C
+interop=true
+linkerOpts=-framework CoreImage
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.CoreImage

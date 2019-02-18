@@ -1,0 +1,13 @@
+#Mon Feb 18 19:02:42 CST 2019
+unique_name=Messages
+compilerOpts=-framework Messages
+depends=stdlib CoreGraphics posix darwin Foundation EAGL QuartzCore UIKit
+modules=Messages
+includedHeaders=System/Library/Frameworks/Messages.framework/Headers/Messages.h System/Library/Frameworks/Messages.framework/Headers/MessagesDefines.h System/Library/Frameworks/Messages.framework/Headers/MSMessagesAppViewController.h System/Library/Frameworks/Messages.framework/Headers/MSConversation.h System/Library/Frameworks/Messages.framework/Headers/MSMessage.h System/Library/Frameworks/Messages.framework/Headers/MSMessageLayout.h System/Library/Frameworks/Messages.framework/Headers/MSMessageTemplateLayout.h System/Library/Frameworks/Messages.framework/Headers/MSMessageLiveLayout.h System/Library/Frameworks/Messages.framework/Headers/MSSession.h System/Library/Frameworks/Messages.framework/Headers/MSSticker.h System/Library/Frameworks/Messages.framework/Headers/MSStickerBrowserView.h System/Library/Frameworks/Messages.framework/Headers/MSStickerBrowserViewDataSource.h System/Library/Frameworks/Messages.framework/Headers/MSStickerBrowserViewController.h System/Library/Frameworks/Messages.framework/Headers/MSStickerView.h System/Library/Frameworks/Messages.framework/Headers/MSMessageError.h
+language=Objective-C
+interop=true
+linkerOpts=-framework Messages
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.Messages

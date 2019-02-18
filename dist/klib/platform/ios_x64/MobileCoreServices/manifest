@@ -1,0 +1,13 @@
+#Mon Feb 18 18:19:04 CST 2019
+unique_name=MobileCoreServices
+compilerOpts=-framework MobileCoreServices
+depends=stdlib
+modules=MobileCoreServices
+includedHeaders=System/Library/Frameworks/MobileCoreServices.framework/Headers/MobileCoreServices.h System/Library/Frameworks/MobileCoreServices.framework/Headers/UTCoreTypes.h System/Library/Frameworks/MobileCoreServices.framework/Headers/UTType.h
+language=Objective-C
+interop=true
+linkerOpts=-framework MobileCoreServices
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.MobileCoreServices

@@ -1,0 +1,13 @@
+#Mon Feb 18 17:20:36 CST 2019
+unique_name=GameController
+compilerOpts=-framework GameController
+depends=stdlib posix darwin Foundation CoreGraphics EAGL Metal QuartzCore UIKit
+modules=GameController
+includedHeaders=System/Library/Frameworks/GameController.framework/Headers/GameController.h System/Library/Frameworks/GameController.framework/Headers/GameControllerExtern.h System/Library/Frameworks/GameController.framework/Headers/GCControllerElement.h System/Library/Frameworks/GameController.framework/Headers/GCControllerAxisInput.h System/Library/Frameworks/GameController.framework/Headers/GCControllerButtonInput.h System/Library/Frameworks/GameController.framework/Headers/GCControllerDirectionPad.h System/Library/Frameworks/GameController.framework/Headers/GCMotion.h System/Library/Frameworks/GameController.framework/Headers/GCGamepad.h System/Library/Frameworks/GameController.framework/Headers/GCGamepadSnapshot.h System/Library/Frameworks/GameController.framework/Headers/GCExtendedGamepad.h System/Library/Frameworks/GameController.framework/Headers/GCExtendedGamepadSnapshot.h System/Library/Frameworks/GameController.framework/Headers/GCMicroGamepad.h System/Library/Frameworks/GameController.framework/Headers/GCMicroGamepadSnapshot.h System/Library/Frameworks/GameController.framework/Headers/GCController.h
+language=Objective-C
+interop=true
+linkerOpts=-framework GameController
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=
+package=platform.GameController

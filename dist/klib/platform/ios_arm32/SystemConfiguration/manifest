@@ -1,0 +1,13 @@
+#Mon Feb 18 16:30:12 CST 2019
+unique_name=SystemConfiguration
+compilerOpts=-framework SystemConfiguration
+depends=stdlib
+modules=SystemConfiguration
+includedHeaders=System/Library/Frameworks/SystemConfiguration.framework/Headers/SystemConfiguration.h System/Library/Frameworks/SystemConfiguration.framework/Headers/SCDynamicStore.h System/Library/Frameworks/SystemConfiguration.framework/Headers/SCDynamicStoreKey.h System/Library/Frameworks/SystemConfiguration.framework/Headers/SCDynamicStoreCopySpecific.h System/Library/Frameworks/SystemConfiguration.framework/Headers/SCPreferences.h System/Library/Frameworks/SystemConfiguration.framework/Headers/SCPreferencesPath.h System/Library/Frameworks/SystemConfiguration.framework/Headers/SCPreferencesSetSpecific.h System/Library/Frameworks/SystemConfiguration.framework/Headers/SCSchemaDefinitions.h System/Library/Frameworks/SystemConfiguration.framework/Headers/SCNetworkConfiguration.h System/Library/Frameworks/SystemConfiguration.framework/Headers/SCNetwork.h System/Library/Frameworks/SystemConfiguration.framework/Headers/SCNetworkReachability.h System/Library/Frameworks/SystemConfiguration.framework/Headers/SCNetworkConnection.h System/Library/Frameworks/SystemConfiguration.framework/Headers/CaptiveNetwork.h System/Library/Frameworks/SystemConfiguration.framework/Headers/DHCPClientPreferences.h System/Library/Frameworks/SystemConfiguration.framework/Headers/SCDynamicStoreCopyDHCPInfo.h
+language=Objective-C
+interop=true
+linkerOpts=-framework SystemConfiguration
+compiler_version=1.2-dev
+abi_version=7
+exportForwardDeclarations=cnames.structs.__SCDynamicStore cnames.structs.AuthorizationOpaqueRef cnames.structs.__SCPreferences cnames.structs.__SCNetworkInterface cnames.structs.__SCBondStatus cnames.structs.__SCNetworkProtocol cnames.structs.__SCNetworkService cnames.structs.__SCNetworkSet cnames.structs.__SCNetworkReachability cnames.structs.__SCNetworkConnection
+package=platform.SystemConfiguration
