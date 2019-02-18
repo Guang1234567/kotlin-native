@@ -2,7 +2,7 @@
 .idea/shelf
 *.iml
 /dependencies/all
-dist
+#dist
 kotlin-native-*.tar.gz
 kotlin-native-*.zip
 translator/src/test/kotlin/tests/*/linked
