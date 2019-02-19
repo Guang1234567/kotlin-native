@@ -8,6 +8,7 @@ plugins {
 }
 
 repositories {
+    mavenCentral()
     jcenter()
     maven { url 'https://dl.bintray.com/kotlin/ktor' }
 }
@@ -31,7 +32,7 @@ kotlin {
         }
         httpServerMain {
             dependencies {
-                implementation 'io.ktor:ktor-server-netty:1.0.1'
+                implementation 'io.ktor:ktor-server-netty:1.1.2'
             }
         }
     }
